@@ -1,8 +1,8 @@
 var React = require('react');
-var includeFolder = require('include-folder');
 var getSvgBody = require('./svg-body');
+var inlineSvg = require('./inline-svg');
 
-var assets = includeFolder(ASSET_PATH, /.\.svg$/);
+var assets = inlineSvg(ASSET_PATH); // asset path will be inlined
 var icons = {};
 
 var Icon = React.createClass({

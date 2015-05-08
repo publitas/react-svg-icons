@@ -9,7 +9,7 @@
   "browserify": {
     "transform": [
       "./inline-asset-path",
-      "folderify"
+      "./inline-assets"
     ]
   },
   "authors": [
@@ -17,8 +17,9 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "folderify": "^0.6.0",
+    "include-svg": "0.0.1",
     "react": "^0.13.x",
+    "static-module": "^1.1.2",
     "svgo": "^0.5.1",
     "through2": "^0.6.5"
   },

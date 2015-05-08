@@ -1,6 +1,7 @@
 var React = require('react');
 var getSvgBody = require('./svg-body');
 var inlineSvg = require('./inline-svg');
+var assign = require('react/lib/Object.assign');
 
 var assets = inlineSvg(ASSET_PATH); // asset path will be inlined
 var icons = {};
@@ -32,12 +33,17 @@ var Icon = React.createClass({
       );
     }
 
+    var style = assign({ verticalAlign: 'middle' },
+      this.props.style
+    );
+
     return React.createElement('svg', {
       viewBox: icon.viewBox,
       preserveAspectRatio: 'xMidYMid meet',  // preserve aspect ratio and center
       width: this.props.width,
       height: this.props.height,
-      style: { verticalAlign: 'middle' },
+      style: style,
+      fill: this.props.color,
       dangerouslySetInnerHTML: { __html:
         icon.body
           .replace(/(stroke)="([^"]+)"/gi, replaceColor(this.props.color))

@@ -31,6 +31,11 @@ React.render(React.createElement(
   React.createElement(Icon, { name: 'react-icon',
     width: '64',
     height: '64',
+    color: '#eea43c' }),
+  React.createElement(Icon, { name: 'right',
+    width: '64',
+    height: '64',
+    style: { position: 'absolute', top: 0 },
     color: '#eea43c' })
 ), document.getElementById('example'));
 
@@ -40,8 +45,10 @@ React.render(React.createElement(
 var React = require('react');
 var getSvgBody = require('./svg-body');
 
+var assign = require('react/lib/Object.assign');
 
-var assets = {"react-icon": "<svg width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" xmlns=\"http://www.w3.org/2000/svg\"><title>react-icon</title><g fill=\"none\" fill-rule=\"evenodd\"><ellipse stroke=\"#979797\" stroke-width=\"2\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><ellipse stroke=\"#979797\" stroke-width=\"2\" transform=\"rotate(60 33 31)\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><ellipse stroke=\"#979797\" stroke-width=\"2\" transform=\"rotate(-60 33 31)\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><circle fill=\"#9B9B9B\" cx=\"33\" cy=\"31\" r=\"5\"/></g></svg>"}; // asset path will be inlined
+var assets = {"react-icon": "<svg width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" xmlns=\"http://www.w3.org/2000/svg\"><title>react-icon</title><g fill=\"none\" fill-rule=\"evenodd\"><ellipse stroke=\"#979797\" stroke-width=\"2\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><ellipse stroke=\"#979797\" stroke-width=\"2\" transform=\"rotate(60 33 31)\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><ellipse stroke=\"#979797\" stroke-width=\"2\" transform=\"rotate(-60 33 31)\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><circle fill=\"#9B9B9B\" cx=\"33\" cy=\"31\" r=\"5\"/></g></svg>",
+"right": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"6\" height=\"10\" viewBox=\"0 0 6 10\"><path d=\"M1.537.15c-.19-.2-.496-.2-.684 0L.17.865c-.19.197-.19.518 0 .715l3.295 3.406L.143 8.42c-.19.198-.19.52 0 .716l.684.717c.188.197.494.197.684 0l4.35-4.508c.19-.198.19-.52 0-.717L1.538.148z\"/></svg>"}; // asset path will be inlined
 var icons = {};
 
 var Icon = React.createClass({
@@ -69,12 +76,15 @@ var Icon = React.createClass({
       return React.createElement('div', { style: { color: '#c1272a' } }, 'Could not find icon called "' + this.props.name + '"');
     }
 
+    var style = assign({ verticalAlign: 'middle' }, this.props.style);
+
     return React.createElement('svg', {
       viewBox: icon.viewBox,
       preserveAspectRatio: 'xMidYMid meet', // preserve aspect ratio and center
       width: this.props.width,
       height: this.props.height,
-      style: { verticalAlign: 'middle' },
+      style: style,
+      fill: this.props.color,
       dangerouslySetInnerHTML: { __html: icon.body.replace(/(stroke)="([^"]+)"/gi, replaceColor(this.props.color)).replace(/(fill)="([^"]+)"/gi, replaceColor(this.props.color))
       }
     });
@@ -104,7 +114,7 @@ function replaceColor(color) {
 
 module.exports = Icon;
 
-},{"./svg-body":158,"react":157}],3:[function(require,module,exports){
+},{"./svg-body":158,"react":157,"react/lib/Object.assign":28}],3:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.

@@ -1,0 +1,36 @@
+{
+  "name": "react-svg-icons",
+  "version": "0.0.1",
+  "description": "SVG icons as react components",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "browserify": {
+    "transform": [
+      "./inline-asset-path",
+      "folderify"
+    ]
+  },
+  "authors": [
+    "Felix Hageloh"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "folderify": "^0.6.0",
+    "react": "^0.13.x",
+    "svgo": "^0.5.1",
+    "through2": "^0.6.5"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "icon",
+    "icons",
+    "svg",
+    "browserify"
+  ],
+  "devDependencies": {
+    "babelify": "^6.0.2"
+  }
+}

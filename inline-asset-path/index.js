@@ -13,7 +13,8 @@ module.exports = function() {
     var pkg;
 
     try {
-      pkg = require.main.require('./package');
+      // TODO: this seems very brittle
+      pkg = require('../../../package');
 
       if (pkg['react-svg-icons']) {
         assetPath = pkg['react-svg-icons'].assetPath;

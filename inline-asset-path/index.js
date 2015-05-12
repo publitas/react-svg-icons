@@ -1,28 +1,11 @@
 var through = require('through2');
+var resolveAssetPath = require('../lib/resolve-asset-path');
+var staticModule = require('static-module');
 
-module.exports = function() {
-  return through(write);
+module.exports = function(file) {
+  if (/\.json$/.test(file)) return through();
 
-  function write(data, _, cb) {
-    this.push(data.toString().replace(/ASSET_PATH/, resolveAssetPath()));
-    cb();
-  }
-
-  function resolveAssetPath() {
-    var assetPath;
-    var pkg;
-
-    try {
-      // TODO: this seems very brittle
-      pkg = require('../../../package');
-
-      if (pkg['react-svg-icons']) {
-        assetPath = pkg['react-svg-icons'].assetPath;
-      }
-    } catch(e) {
-      assetPath = './icons';
-    }
-
-    return JSON.stringify(assetPath);
-  }
+  return staticModule({
+    './lib/resolve-asset-path': resolveAssetPath
+  }, {});
 };

@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/felix/Workspace/publitas/react-svg-icons/example/example.jsx":[function(require,module,exports){
 'use strict';
 
 var Icon = require('../');
@@ -29,17 +29,16 @@ React.render(React.createElement(
     color: '#d8494c' }),
   React.createElement('br', null),
   React.createElement(Icon, { name: 'react-icon',
-    width: '64',
-    height: '64',
+    width: '200',
+    height: '200',
     color: '#eea43c' }),
   React.createElement(Icon, { name: 'right',
-    width: '64',
-    height: '64',
-    style: { position: 'absolute', top: 0 },
-    color: '#eea43c' })
+    width: '200',
+    height: '200',
+    color: 'red' })
 ), document.getElementById('example'));
 
-},{"../":2,"react":157}],2:[function(require,module,exports){
+},{"../":"/Users/felix/Workspace/publitas/react-svg-icons/index.js","react":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/react.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/index.js":[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -47,8 +46,8 @@ var getSvgBody = require('./svg-body');
 
 var assign = require('react/lib/Object.assign');
 
-var assets = {"react-icon": "<svg width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" xmlns=\"http://www.w3.org/2000/svg\"><title>react-icon</title><g fill=\"none\" fill-rule=\"evenodd\"><ellipse stroke=\"#979797\" stroke-width=\"2\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><ellipse stroke=\"#979797\" stroke-width=\"2\" transform=\"rotate(60 33 31)\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><ellipse stroke=\"#979797\" stroke-width=\"2\" transform=\"rotate(-60 33 31)\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><circle fill=\"#9B9B9B\" cx=\"33\" cy=\"31\" r=\"5\"/></g></svg>",
-"right": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"6\" height=\"10\" viewBox=\"0 0 6 10\"><path d=\"M1.537.15c-.19-.2-.496-.2-.684 0L.17.865c-.19.197-.19.518 0 .715l3.295 3.406L.143 8.42c-.19.198-.19.52 0 .716l.684.717c.188.197.494.197.684 0l4.35-4.508c.19-.198.19-.52 0-.717L1.538.148z\"/></svg>"}; // asset path will be inlined
+var assets = {"right": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"6\" height=\"10\" viewBox=\"0 0 6 10\"><path d=\"M1.537.15c-.19-.2-.496-.2-.684 0L.17.865c-.19.197-.19.518 0 .715l3.295 3.406L.143 8.42c-.19.198-.19.52 0 .716l.684.717c.188.197.494.197.684 0l4.35-4.508c.19-.198.19-.52 0-.717L1.538.148z\"/></svg>",
+"react-icon": "<svg width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" xmlns=\"http://www.w3.org/2000/svg\"><title>react-icon</title><g fill=\"none\" fill-rule=\"evenodd\"><ellipse stroke=\"#979797\" stroke-width=\"2\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><ellipse stroke=\"#979797\" stroke-width=\"2\" transform=\"rotate(60 33 31)\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><ellipse stroke=\"#979797\" stroke-width=\"2\" transform=\"rotate(-60 33 31)\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><circle fill=\"#9B9B9B\" cx=\"33\" cy=\"31\" r=\"5\"/></g></svg>"}; // asset path will be inlined
 var icons = {};
 
 var Icon = React.createClass({
@@ -114,7 +113,7 @@ function replaceColor(color) {
 
 module.exports = Icon;
 
-},{"./svg-body":158,"react":157,"react/lib/Object.assign":28}],3:[function(require,module,exports){
+},{"./svg-body":"/Users/felix/Workspace/publitas/react-svg-icons/svg-body/index.js","react":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/react.js","react/lib/Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/AutoFocusMixin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -141,7 +140,7 @@ var AutoFocusMixin = {
 
 module.exports = AutoFocusMixin;
 
-},{"./focusNode":121}],4:[function(require,module,exports){
+},{"./focusNode":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/focusNode.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/BeforeInputEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015 Facebook, Inc.
  * All rights reserved.
@@ -636,7 +635,7 @@ var BeforeInputEventPlugin = {
 
 module.exports = BeforeInputEventPlugin;
 
-},{"./EventConstants":16,"./EventPropagators":21,"./ExecutionEnvironment":22,"./FallbackCompositionState":23,"./SyntheticCompositionEvent":95,"./SyntheticInputEvent":99,"./keyOf":143}],5:[function(require,module,exports){
+},{"./EventConstants":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPropagators.js","./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js","./FallbackCompositionState":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/FallbackCompositionState.js","./SyntheticCompositionEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticCompositionEvent.js","./SyntheticInputEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticInputEvent.js","./keyOf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyOf.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/CSSProperty.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -761,7 +760,7 @@ var CSSProperty = {
 
 module.exports = CSSProperty;
 
-},{}],6:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/CSSPropertyOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -943,7 +942,7 @@ var CSSPropertyOperations = {
 module.exports = CSSPropertyOperations;
 
 }).call(this,require('_process'))
-},{"./CSSProperty":5,"./ExecutionEnvironment":22,"./camelizeStyleName":110,"./dangerousStyleValue":115,"./hyphenateStyleName":135,"./memoizeStringOnly":145,"./warning":156,"_process":159}],7:[function(require,module,exports){
+},{"./CSSProperty":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/CSSProperty.js","./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js","./camelizeStyleName":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/camelizeStyleName.js","./dangerousStyleValue":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/dangerousStyleValue.js","./hyphenateStyleName":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/hyphenateStyleName.js","./memoizeStringOnly":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/memoizeStringOnly.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/CallbackQueue.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -1043,7 +1042,7 @@ PooledClass.addPoolingTo(CallbackQueue);
 module.exports = CallbackQueue;
 
 }).call(this,require('_process'))
-},{"./Object.assign":28,"./PooledClass":29,"./invariant":137,"_process":159}],8:[function(require,module,exports){
+},{"./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/PooledClass.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ChangeEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -1425,7 +1424,7 @@ var ChangeEventPlugin = {
 
 module.exports = ChangeEventPlugin;
 
-},{"./EventConstants":16,"./EventPluginHub":18,"./EventPropagators":21,"./ExecutionEnvironment":22,"./ReactUpdates":89,"./SyntheticEvent":97,"./isEventSupported":138,"./isTextInputElement":140,"./keyOf":143}],9:[function(require,module,exports){
+},{"./EventConstants":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPluginHub.js","./EventPropagators":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPropagators.js","./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js","./ReactUpdates":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdates.js","./SyntheticEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticEvent.js","./isEventSupported":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/isEventSupported.js","./isTextInputElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/isTextInputElement.js","./keyOf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyOf.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ClientReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -1450,7 +1449,7 @@ var ClientReactRootIndex = {
 
 module.exports = ClientReactRootIndex;
 
-},{}],10:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMChildrenOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -1588,7 +1587,7 @@ var DOMChildrenOperations = {
 module.exports = DOMChildrenOperations;
 
 }).call(this,require('_process'))
-},{"./Danger":13,"./ReactMultiChildUpdateTypes":74,"./invariant":137,"./setTextContent":151,"_process":159}],11:[function(require,module,exports){
+},{"./Danger":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Danger.js","./ReactMultiChildUpdateTypes":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./setTextContent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/setTextContent.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMProperty.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -1887,7 +1886,7 @@ var DOMProperty = {
 module.exports = DOMProperty;
 
 }).call(this,require('_process'))
-},{"./invariant":137,"_process":159}],12:[function(require,module,exports){
+},{"./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMPropertyOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -2079,7 +2078,7 @@ var DOMPropertyOperations = {
 module.exports = DOMPropertyOperations;
 
 }).call(this,require('_process'))
-},{"./DOMProperty":11,"./quoteAttributeValueForBrowser":149,"./warning":156,"_process":159}],13:[function(require,module,exports){
+},{"./DOMProperty":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMProperty.js","./quoteAttributeValueForBrowser":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/quoteAttributeValueForBrowser.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Danger.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -2266,7 +2265,7 @@ var Danger = {
 module.exports = Danger;
 
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":22,"./createNodesFromMarkup":114,"./emptyFunction":116,"./getMarkupWrap":129,"./invariant":137,"_process":159}],14:[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js","./createNodesFromMarkup":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/createNodesFromMarkup.js","./emptyFunction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyFunction.js","./getMarkupWrap":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getMarkupWrap.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DefaultEventPluginOrder.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -2305,7 +2304,7 @@ var DefaultEventPluginOrder = [
 
 module.exports = DefaultEventPluginOrder;
 
-},{"./keyOf":143}],15:[function(require,module,exports){
+},{"./keyOf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyOf.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EnterLeaveEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -2445,7 +2444,7 @@ var EnterLeaveEventPlugin = {
 
 module.exports = EnterLeaveEventPlugin;
 
-},{"./EventConstants":16,"./EventPropagators":21,"./ReactMount":72,"./SyntheticMouseEvent":101,"./keyOf":143}],16:[function(require,module,exports){
+},{"./EventConstants":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPropagators.js","./ReactMount":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMount.js","./SyntheticMouseEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticMouseEvent.js","./keyOf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyOf.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventConstants.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -2517,7 +2516,7 @@ var EventConstants = {
 
 module.exports = EventConstants;
 
-},{"./keyMirror":142}],17:[function(require,module,exports){
+},{"./keyMirror":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyMirror.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventListener.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -2607,7 +2606,7 @@ var EventListener = {
 module.exports = EventListener;
 
 }).call(this,require('_process'))
-},{"./emptyFunction":116,"_process":159}],18:[function(require,module,exports){
+},{"./emptyFunction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyFunction.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPluginHub.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -2885,7 +2884,7 @@ var EventPluginHub = {
 module.exports = EventPluginHub;
 
 }).call(this,require('_process'))
-},{"./EventPluginRegistry":19,"./EventPluginUtils":20,"./accumulateInto":107,"./forEachAccumulated":122,"./invariant":137,"_process":159}],19:[function(require,module,exports){
+},{"./EventPluginRegistry":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPluginRegistry.js","./EventPluginUtils":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPluginUtils.js","./accumulateInto":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/forEachAccumulated.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPluginRegistry.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -3165,7 +3164,7 @@ var EventPluginRegistry = {
 module.exports = EventPluginRegistry;
 
 }).call(this,require('_process'))
-},{"./invariant":137,"_process":159}],20:[function(require,module,exports){
+},{"./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPluginUtils.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -3386,7 +3385,7 @@ var EventPluginUtils = {
 module.exports = EventPluginUtils;
 
 }).call(this,require('_process'))
-},{"./EventConstants":16,"./invariant":137,"_process":159}],21:[function(require,module,exports){
+},{"./EventConstants":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventConstants.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPropagators.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -3528,7 +3527,7 @@ var EventPropagators = {
 module.exports = EventPropagators;
 
 }).call(this,require('_process'))
-},{"./EventConstants":16,"./EventPluginHub":18,"./accumulateInto":107,"./forEachAccumulated":122,"_process":159}],22:[function(require,module,exports){
+},{"./EventConstants":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPluginHub.js","./accumulateInto":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/forEachAccumulated.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -3572,7 +3571,7 @@ var ExecutionEnvironment = {
 
 module.exports = ExecutionEnvironment;
 
-},{}],23:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/FallbackCompositionState.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -3663,7 +3662,7 @@ PooledClass.addPoolingTo(FallbackCompositionState);
 
 module.exports = FallbackCompositionState;
 
-},{"./Object.assign":28,"./PooledClass":29,"./getTextContentAccessor":132}],24:[function(require,module,exports){
+},{"./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/PooledClass.js","./getTextContentAccessor":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getTextContentAccessor.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/HTMLDOMPropertyConfig.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -3874,7 +3873,7 @@ var HTMLDOMPropertyConfig = {
 
 module.exports = HTMLDOMPropertyConfig;
 
-},{"./DOMProperty":11,"./ExecutionEnvironment":22}],25:[function(require,module,exports){
+},{"./DOMProperty":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMProperty.js","./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/LinkedValueUtils.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -4030,7 +4029,7 @@ var LinkedValueUtils = {
 module.exports = LinkedValueUtils;
 
 }).call(this,require('_process'))
-},{"./ReactPropTypes":80,"./invariant":137,"_process":159}],26:[function(require,module,exports){
+},{"./ReactPropTypes":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPropTypes.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/LocalEventTrapMixin.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -4087,7 +4086,7 @@ var LocalEventTrapMixin = {
 module.exports = LocalEventTrapMixin;
 
 }).call(this,require('_process'))
-},{"./ReactBrowserEventEmitter":32,"./accumulateInto":107,"./forEachAccumulated":122,"./invariant":137,"_process":159}],27:[function(require,module,exports){
+},{"./ReactBrowserEventEmitter":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserEventEmitter.js","./accumulateInto":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/accumulateInto.js","./forEachAccumulated":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/forEachAccumulated.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/MobileSafariClickEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4145,7 +4144,7 @@ var MobileSafariClickEventPlugin = {
 
 module.exports = MobileSafariClickEventPlugin;
 
-},{"./EventConstants":16,"./emptyFunction":116}],28:[function(require,module,exports){
+},{"./EventConstants":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventConstants.js","./emptyFunction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyFunction.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -4194,7 +4193,7 @@ function assign(target, sources) {
 
 module.exports = assign;
 
-},{}],29:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/PooledClass.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -4310,7 +4309,7 @@ var PooledClass = {
 module.exports = PooledClass;
 
 }).call(this,require('_process'))
-},{"./invariant":137,"_process":159}],30:[function(require,module,exports){
+},{"./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/React.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -4462,7 +4461,7 @@ React.version = '0.13.2';
 module.exports = React;
 
 }).call(this,require('_process'))
-},{"./EventPluginUtils":20,"./ExecutionEnvironment":22,"./Object.assign":28,"./ReactChildren":34,"./ReactClass":35,"./ReactComponent":36,"./ReactContext":40,"./ReactCurrentOwner":41,"./ReactDOM":42,"./ReactDOMTextComponent":53,"./ReactDefaultInjection":56,"./ReactElement":59,"./ReactElementValidator":60,"./ReactInstanceHandles":68,"./ReactMount":72,"./ReactPerf":77,"./ReactPropTypes":80,"./ReactReconciler":83,"./ReactServerRendering":86,"./findDOMNode":119,"./onlyChild":146,"_process":159}],31:[function(require,module,exports){
+},{"./EventPluginUtils":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPluginUtils.js","./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js","./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./ReactChildren":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactChildren.js","./ReactClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactClass.js","./ReactComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactComponent.js","./ReactContext":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactContext.js","./ReactCurrentOwner":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactCurrentOwner.js","./ReactDOM":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOM.js","./ReactDOMTextComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMTextComponent.js","./ReactDefaultInjection":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDefaultInjection.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElementValidator.js","./ReactInstanceHandles":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPerf.js","./ReactPropTypes":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPropTypes.js","./ReactReconciler":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactReconciler.js","./ReactServerRendering":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactServerRendering.js","./findDOMNode":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/findDOMNode.js","./onlyChild":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/onlyChild.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserComponentMixin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4493,7 +4492,7 @@ var ReactBrowserComponentMixin = {
 
 module.exports = ReactBrowserComponentMixin;
 
-},{"./findDOMNode":119}],32:[function(require,module,exports){
+},{"./findDOMNode":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/findDOMNode.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserEventEmitter.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4846,7 +4845,7 @@ var ReactBrowserEventEmitter = assign({}, ReactEventEmitterMixin, {
 
 module.exports = ReactBrowserEventEmitter;
 
-},{"./EventConstants":16,"./EventPluginHub":18,"./EventPluginRegistry":19,"./Object.assign":28,"./ReactEventEmitterMixin":63,"./ViewportMetrics":106,"./isEventSupported":138}],33:[function(require,module,exports){
+},{"./EventConstants":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPluginHub.js","./EventPluginRegistry":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPluginRegistry.js","./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./ReactEventEmitterMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactEventEmitterMixin.js","./ViewportMetrics":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ViewportMetrics.js","./isEventSupported":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/isEventSupported.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactChildReconciler.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -4973,7 +4972,7 @@ var ReactChildReconciler = {
 
 module.exports = ReactChildReconciler;
 
-},{"./ReactReconciler":83,"./flattenChildren":120,"./instantiateReactComponent":136,"./shouldUpdateReactComponent":153}],34:[function(require,module,exports){
+},{"./ReactReconciler":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactReconciler.js","./flattenChildren":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/flattenChildren.js","./instantiateReactComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/instantiateReactComponent.js","./shouldUpdateReactComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/shouldUpdateReactComponent.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactChildren.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -5126,7 +5125,7 @@ var ReactChildren = {
 module.exports = ReactChildren;
 
 }).call(this,require('_process'))
-},{"./PooledClass":29,"./ReactFragment":65,"./traverseAllChildren":155,"./warning":156,"_process":159}],35:[function(require,module,exports){
+},{"./PooledClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/PooledClass.js","./ReactFragment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactFragment.js","./traverseAllChildren":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/traverseAllChildren.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactClass.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -6072,7 +6071,7 @@ var ReactClass = {
 module.exports = ReactClass;
 
 }).call(this,require('_process'))
-},{"./Object.assign":28,"./ReactComponent":36,"./ReactCurrentOwner":41,"./ReactElement":59,"./ReactErrorUtils":62,"./ReactInstanceMap":69,"./ReactLifeCycle":70,"./ReactPropTypeLocationNames":78,"./ReactPropTypeLocations":79,"./ReactUpdateQueue":88,"./invariant":137,"./keyMirror":142,"./keyOf":143,"./warning":156,"_process":159}],36:[function(require,module,exports){
+},{"./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./ReactComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactComponent.js","./ReactCurrentOwner":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactErrorUtils":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactErrorUtils.js","./ReactInstanceMap":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceMap.js","./ReactLifeCycle":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactLifeCycle.js","./ReactPropTypeLocationNames":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPropTypeLocations.js","./ReactUpdateQueue":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdateQueue.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./keyMirror":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyMirror.js","./keyOf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyOf.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -6208,7 +6207,7 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = ReactComponent;
 
 }).call(this,require('_process'))
-},{"./ReactUpdateQueue":88,"./invariant":137,"./warning":156,"_process":159}],37:[function(require,module,exports){
+},{"./ReactUpdateQueue":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdateQueue.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactComponentBrowserEnvironment.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -6255,7 +6254,7 @@ var ReactComponentBrowserEnvironment = {
 
 module.exports = ReactComponentBrowserEnvironment;
 
-},{"./ReactDOMIDOperations":46,"./ReactMount":72}],38:[function(require,module,exports){
+},{"./ReactDOMIDOperations":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMIDOperations.js","./ReactMount":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMount.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactComponentEnvironment.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -6316,7 +6315,7 @@ var ReactComponentEnvironment = {
 module.exports = ReactComponentEnvironment;
 
 }).call(this,require('_process'))
-},{"./invariant":137,"_process":159}],39:[function(require,module,exports){
+},{"./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactCompositeComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -7214,7 +7213,7 @@ var ReactCompositeComponent = {
 module.exports = ReactCompositeComponent;
 
 }).call(this,require('_process'))
-},{"./Object.assign":28,"./ReactComponentEnvironment":38,"./ReactContext":40,"./ReactCurrentOwner":41,"./ReactElement":59,"./ReactElementValidator":60,"./ReactInstanceMap":69,"./ReactLifeCycle":70,"./ReactNativeComponent":75,"./ReactPerf":77,"./ReactPropTypeLocationNames":78,"./ReactPropTypeLocations":79,"./ReactReconciler":83,"./ReactUpdates":89,"./emptyObject":117,"./invariant":137,"./shouldUpdateReactComponent":153,"./warning":156,"_process":159}],40:[function(require,module,exports){
+},{"./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./ReactComponentEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactComponentEnvironment.js","./ReactContext":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactContext.js","./ReactCurrentOwner":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElementValidator.js","./ReactInstanceMap":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceMap.js","./ReactLifeCycle":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactLifeCycle.js","./ReactNativeComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactNativeComponent.js","./ReactPerf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPerf.js","./ReactPropTypeLocationNames":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPropTypeLocations.js","./ReactReconciler":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactReconciler.js","./ReactUpdates":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdates.js","./emptyObject":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyObject.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./shouldUpdateReactComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/shouldUpdateReactComponent.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactContext.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -7292,7 +7291,7 @@ var ReactContext = {
 module.exports = ReactContext;
 
 }).call(this,require('_process'))
-},{"./Object.assign":28,"./emptyObject":117,"./warning":156,"_process":159}],41:[function(require,module,exports){
+},{"./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./emptyObject":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyObject.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactCurrentOwner.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -7326,7 +7325,7 @@ var ReactCurrentOwner = {
 
 module.exports = ReactCurrentOwner;
 
-},{}],42:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOM.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -7504,7 +7503,7 @@ var ReactDOM = mapObject({
 module.exports = ReactDOM;
 
 }).call(this,require('_process'))
-},{"./ReactElement":59,"./ReactElementValidator":60,"./mapObject":144,"_process":159}],43:[function(require,module,exports){
+},{"./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElementValidator.js","./mapObject":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/mapObject.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMButton.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -7568,7 +7567,7 @@ var ReactDOMButton = ReactClass.createClass({
 
 module.exports = ReactDOMButton;
 
-},{"./AutoFocusMixin":3,"./ReactBrowserComponentMixin":31,"./ReactClass":35,"./ReactElement":59,"./keyMirror":142}],44:[function(require,module,exports){
+},{"./AutoFocusMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/AutoFocusMixin.js","./ReactBrowserComponentMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactClass.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./keyMirror":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyMirror.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8076,7 +8075,7 @@ ReactDOMComponent.injection = {
 module.exports = ReactDOMComponent;
 
 }).call(this,require('_process'))
-},{"./CSSPropertyOperations":6,"./DOMProperty":11,"./DOMPropertyOperations":12,"./Object.assign":28,"./ReactBrowserEventEmitter":32,"./ReactComponentBrowserEnvironment":37,"./ReactMount":72,"./ReactMultiChild":73,"./ReactPerf":77,"./escapeTextContentForBrowser":118,"./invariant":137,"./isEventSupported":138,"./keyOf":143,"./warning":156,"_process":159}],45:[function(require,module,exports){
+},{"./CSSPropertyOperations":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/CSSPropertyOperations.js","./DOMProperty":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMProperty.js","./DOMPropertyOperations":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMPropertyOperations.js","./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./ReactBrowserEventEmitter":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactComponentBrowserEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactMount":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMount.js","./ReactMultiChild":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMultiChild.js","./ReactPerf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPerf.js","./escapeTextContentForBrowser":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/escapeTextContentForBrowser.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./isEventSupported":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/isEventSupported.js","./keyOf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyOf.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMForm.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -8125,7 +8124,7 @@ var ReactDOMForm = ReactClass.createClass({
 
 module.exports = ReactDOMForm;
 
-},{"./EventConstants":16,"./LocalEventTrapMixin":26,"./ReactBrowserComponentMixin":31,"./ReactClass":35,"./ReactElement":59}],46:[function(require,module,exports){
+},{"./EventConstants":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventConstants.js","./LocalEventTrapMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/LocalEventTrapMixin.js","./ReactBrowserComponentMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactClass.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMIDOperations.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8293,7 +8292,7 @@ ReactPerf.measureMethods(ReactDOMIDOperations, 'ReactDOMIDOperations', {
 module.exports = ReactDOMIDOperations;
 
 }).call(this,require('_process'))
-},{"./CSSPropertyOperations":6,"./DOMChildrenOperations":10,"./DOMPropertyOperations":12,"./ReactMount":72,"./ReactPerf":77,"./invariant":137,"./setInnerHTML":150,"_process":159}],47:[function(require,module,exports){
+},{"./CSSPropertyOperations":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/CSSPropertyOperations.js","./DOMChildrenOperations":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMChildrenOperations.js","./DOMPropertyOperations":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMPropertyOperations.js","./ReactMount":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPerf.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./setInnerHTML":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/setInnerHTML.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMIframe.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -8338,7 +8337,7 @@ var ReactDOMIframe = ReactClass.createClass({
 
 module.exports = ReactDOMIframe;
 
-},{"./EventConstants":16,"./LocalEventTrapMixin":26,"./ReactBrowserComponentMixin":31,"./ReactClass":35,"./ReactElement":59}],48:[function(require,module,exports){
+},{"./EventConstants":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventConstants.js","./LocalEventTrapMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/LocalEventTrapMixin.js","./ReactBrowserComponentMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactClass.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMImg.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -8384,7 +8383,7 @@ var ReactDOMImg = ReactClass.createClass({
 
 module.exports = ReactDOMImg;
 
-},{"./EventConstants":16,"./LocalEventTrapMixin":26,"./ReactBrowserComponentMixin":31,"./ReactClass":35,"./ReactElement":59}],49:[function(require,module,exports){
+},{"./EventConstants":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventConstants.js","./LocalEventTrapMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/LocalEventTrapMixin.js","./ReactBrowserComponentMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactClass.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMInput.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8561,7 +8560,7 @@ var ReactDOMInput = ReactClass.createClass({
 module.exports = ReactDOMInput;
 
 }).call(this,require('_process'))
-},{"./AutoFocusMixin":3,"./DOMPropertyOperations":12,"./LinkedValueUtils":25,"./Object.assign":28,"./ReactBrowserComponentMixin":31,"./ReactClass":35,"./ReactElement":59,"./ReactMount":72,"./ReactUpdates":89,"./invariant":137,"_process":159}],50:[function(require,module,exports){
+},{"./AutoFocusMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/AutoFocusMixin.js","./DOMPropertyOperations":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMPropertyOperations.js","./LinkedValueUtils":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./ReactBrowserComponentMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactClass.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactMount":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdates.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMOption.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8613,7 +8612,7 @@ var ReactDOMOption = ReactClass.createClass({
 module.exports = ReactDOMOption;
 
 }).call(this,require('_process'))
-},{"./ReactBrowserComponentMixin":31,"./ReactClass":35,"./ReactElement":59,"./warning":156,"_process":159}],51:[function(require,module,exports){
+},{"./ReactBrowserComponentMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactClass.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMSelect.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -8791,7 +8790,7 @@ var ReactDOMSelect = ReactClass.createClass({
 
 module.exports = ReactDOMSelect;
 
-},{"./AutoFocusMixin":3,"./LinkedValueUtils":25,"./Object.assign":28,"./ReactBrowserComponentMixin":31,"./ReactClass":35,"./ReactElement":59,"./ReactUpdates":89}],52:[function(require,module,exports){
+},{"./AutoFocusMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/AutoFocusMixin.js","./LinkedValueUtils":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./ReactBrowserComponentMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactClass.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactUpdates":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdates.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMSelection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -9004,7 +9003,7 @@ var ReactDOMSelection = {
 
 module.exports = ReactDOMSelection;
 
-},{"./ExecutionEnvironment":22,"./getNodeForCharacterOffset":130,"./getTextContentAccessor":132}],53:[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js","./getNodeForCharacterOffset":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getNodeForCharacterOffset.js","./getTextContentAccessor":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getTextContentAccessor.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMTextComponent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -9121,7 +9120,7 @@ assign(ReactDOMTextComponent.prototype, {
 
 module.exports = ReactDOMTextComponent;
 
-},{"./DOMPropertyOperations":12,"./Object.assign":28,"./ReactComponentBrowserEnvironment":37,"./ReactDOMComponent":44,"./escapeTextContentForBrowser":118}],54:[function(require,module,exports){
+},{"./DOMPropertyOperations":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMPropertyOperations.js","./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./ReactComponentBrowserEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactDOMComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMComponent.js","./escapeTextContentForBrowser":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/escapeTextContentForBrowser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMTextarea.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -9261,7 +9260,7 @@ var ReactDOMTextarea = ReactClass.createClass({
 module.exports = ReactDOMTextarea;
 
 }).call(this,require('_process'))
-},{"./AutoFocusMixin":3,"./DOMPropertyOperations":12,"./LinkedValueUtils":25,"./Object.assign":28,"./ReactBrowserComponentMixin":31,"./ReactClass":35,"./ReactElement":59,"./ReactUpdates":89,"./invariant":137,"./warning":156,"_process":159}],55:[function(require,module,exports){
+},{"./AutoFocusMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/AutoFocusMixin.js","./DOMPropertyOperations":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMPropertyOperations.js","./LinkedValueUtils":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/LinkedValueUtils.js","./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./ReactBrowserComponentMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactClass.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactUpdates":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdates.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDefaultBatchingStrategy.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -9334,7 +9333,7 @@ var ReactDefaultBatchingStrategy = {
 
 module.exports = ReactDefaultBatchingStrategy;
 
-},{"./Object.assign":28,"./ReactUpdates":89,"./Transaction":105,"./emptyFunction":116}],56:[function(require,module,exports){
+},{"./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./ReactUpdates":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdates.js","./Transaction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Transaction.js","./emptyFunction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyFunction.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDefaultInjection.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -9493,7 +9492,7 @@ module.exports = {
 };
 
 }).call(this,require('_process'))
-},{"./BeforeInputEventPlugin":4,"./ChangeEventPlugin":8,"./ClientReactRootIndex":9,"./DefaultEventPluginOrder":14,"./EnterLeaveEventPlugin":15,"./ExecutionEnvironment":22,"./HTMLDOMPropertyConfig":24,"./MobileSafariClickEventPlugin":27,"./ReactBrowserComponentMixin":31,"./ReactClass":35,"./ReactComponentBrowserEnvironment":37,"./ReactDOMButton":43,"./ReactDOMComponent":44,"./ReactDOMForm":45,"./ReactDOMIDOperations":46,"./ReactDOMIframe":47,"./ReactDOMImg":48,"./ReactDOMInput":49,"./ReactDOMOption":50,"./ReactDOMSelect":51,"./ReactDOMTextComponent":53,"./ReactDOMTextarea":54,"./ReactDefaultBatchingStrategy":55,"./ReactDefaultPerf":57,"./ReactElement":59,"./ReactEventListener":64,"./ReactInjection":66,"./ReactInstanceHandles":68,"./ReactMount":72,"./ReactReconcileTransaction":82,"./SVGDOMPropertyConfig":90,"./SelectEventPlugin":91,"./ServerReactRootIndex":92,"./SimpleEventPlugin":93,"./createFullPageComponent":113,"_process":159}],57:[function(require,module,exports){
+},{"./BeforeInputEventPlugin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/BeforeInputEventPlugin.js","./ChangeEventPlugin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ChangeEventPlugin.js","./ClientReactRootIndex":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ClientReactRootIndex.js","./DefaultEventPluginOrder":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DefaultEventPluginOrder.js","./EnterLeaveEventPlugin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EnterLeaveEventPlugin.js","./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js","./HTMLDOMPropertyConfig":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/HTMLDOMPropertyConfig.js","./MobileSafariClickEventPlugin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/MobileSafariClickEventPlugin.js","./ReactBrowserComponentMixin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactClass.js","./ReactComponentBrowserEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactDOMButton":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMButton.js","./ReactDOMComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMComponent.js","./ReactDOMForm":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMForm.js","./ReactDOMIDOperations":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMIDOperations.js","./ReactDOMIframe":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMIframe.js","./ReactDOMImg":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMImg.js","./ReactDOMInput":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMInput.js","./ReactDOMOption":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMOption.js","./ReactDOMSelect":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMSelect.js","./ReactDOMTextComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMTextComponent.js","./ReactDOMTextarea":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMTextarea.js","./ReactDefaultBatchingStrategy":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDefaultBatchingStrategy.js","./ReactDefaultPerf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDefaultPerf.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactEventListener":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactEventListener.js","./ReactInjection":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInjection.js","./ReactInstanceHandles":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMount.js","./ReactReconcileTransaction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactReconcileTransaction.js","./SVGDOMPropertyConfig":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SVGDOMPropertyConfig.js","./SelectEventPlugin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SelectEventPlugin.js","./ServerReactRootIndex":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ServerReactRootIndex.js","./SimpleEventPlugin":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SimpleEventPlugin.js","./createFullPageComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/createFullPageComponent.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDefaultPerf.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -9759,7 +9758,7 @@ var ReactDefaultPerf = {
 
 module.exports = ReactDefaultPerf;
 
-},{"./DOMProperty":11,"./ReactDefaultPerfAnalysis":58,"./ReactMount":72,"./ReactPerf":77,"./performanceNow":148}],58:[function(require,module,exports){
+},{"./DOMProperty":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMProperty.js","./ReactDefaultPerfAnalysis":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDefaultPerfAnalysis.js","./ReactMount":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPerf.js","./performanceNow":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/performanceNow.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDefaultPerfAnalysis.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -9965,7 +9964,7 @@ var ReactDefaultPerfAnalysis = {
 
 module.exports = ReactDefaultPerfAnalysis;
 
-},{"./Object.assign":28}],59:[function(require,module,exports){
+},{"./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -10273,7 +10272,7 @@ ReactElement.isValidElement = function(object) {
 module.exports = ReactElement;
 
 }).call(this,require('_process'))
-},{"./Object.assign":28,"./ReactContext":40,"./ReactCurrentOwner":41,"./warning":156,"_process":159}],60:[function(require,module,exports){
+},{"./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./ReactContext":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactContext.js","./ReactCurrentOwner":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactCurrentOwner.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElementValidator.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -10738,7 +10737,7 @@ var ReactElementValidator = {
 module.exports = ReactElementValidator;
 
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":41,"./ReactElement":59,"./ReactFragment":65,"./ReactNativeComponent":75,"./ReactPropTypeLocationNames":78,"./ReactPropTypeLocations":79,"./getIteratorFn":128,"./invariant":137,"./warning":156,"_process":159}],61:[function(require,module,exports){
+},{"./ReactCurrentOwner":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactFragment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactFragment.js","./ReactNativeComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactNativeComponent.js","./ReactPropTypeLocationNames":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPropTypeLocations.js","./getIteratorFn":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getIteratorFn.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactEmptyComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -10833,7 +10832,7 @@ var ReactEmptyComponent = {
 module.exports = ReactEmptyComponent;
 
 }).call(this,require('_process'))
-},{"./ReactElement":59,"./ReactInstanceMap":69,"./invariant":137,"_process":159}],62:[function(require,module,exports){
+},{"./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactInstanceMap":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceMap.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactErrorUtils.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -10865,7 +10864,7 @@ var ReactErrorUtils = {
 
 module.exports = ReactErrorUtils;
 
-},{}],63:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactEventEmitterMixin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -10915,7 +10914,7 @@ var ReactEventEmitterMixin = {
 
 module.exports = ReactEventEmitterMixin;
 
-},{"./EventPluginHub":18}],64:[function(require,module,exports){
+},{"./EventPluginHub":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPluginHub.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactEventListener.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -11098,7 +11097,7 @@ var ReactEventListener = {
 
 module.exports = ReactEventListener;
 
-},{"./EventListener":17,"./ExecutionEnvironment":22,"./Object.assign":28,"./PooledClass":29,"./ReactInstanceHandles":68,"./ReactMount":72,"./ReactUpdates":89,"./getEventTarget":127,"./getUnboundedScrollPosition":133}],65:[function(require,module,exports){
+},{"./EventListener":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventListener.js","./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js","./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/PooledClass.js","./ReactInstanceHandles":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdates.js","./getEventTarget":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventTarget.js","./getUnboundedScrollPosition":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getUnboundedScrollPosition.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactFragment.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -11283,7 +11282,7 @@ var ReactFragment = {
 module.exports = ReactFragment;
 
 }).call(this,require('_process'))
-},{"./ReactElement":59,"./warning":156,"_process":159}],66:[function(require,module,exports){
+},{"./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInjection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -11325,7 +11324,7 @@ var ReactInjection = {
 
 module.exports = ReactInjection;
 
-},{"./DOMProperty":11,"./EventPluginHub":18,"./ReactBrowserEventEmitter":32,"./ReactClass":35,"./ReactComponentEnvironment":38,"./ReactDOMComponent":44,"./ReactEmptyComponent":61,"./ReactNativeComponent":75,"./ReactPerf":77,"./ReactRootIndex":85,"./ReactUpdates":89}],67:[function(require,module,exports){
+},{"./DOMProperty":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMProperty.js","./EventPluginHub":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPluginHub.js","./ReactBrowserEventEmitter":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactClass.js","./ReactComponentEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactComponentEnvironment.js","./ReactDOMComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMComponent.js","./ReactEmptyComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactEmptyComponent.js","./ReactNativeComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactNativeComponent.js","./ReactPerf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPerf.js","./ReactRootIndex":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactRootIndex.js","./ReactUpdates":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdates.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInputSelection.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -11460,7 +11459,7 @@ var ReactInputSelection = {
 
 module.exports = ReactInputSelection;
 
-},{"./ReactDOMSelection":52,"./containsNode":111,"./focusNode":121,"./getActiveElement":123}],68:[function(require,module,exports){
+},{"./ReactDOMSelection":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactDOMSelection.js","./containsNode":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/containsNode.js","./focusNode":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/focusNode.js","./getActiveElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getActiveElement.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceHandles.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -11796,7 +11795,7 @@ var ReactInstanceHandles = {
 module.exports = ReactInstanceHandles;
 
 }).call(this,require('_process'))
-},{"./ReactRootIndex":85,"./invariant":137,"_process":159}],69:[function(require,module,exports){
+},{"./ReactRootIndex":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactRootIndex.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceMap.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -11845,7 +11844,7 @@ var ReactInstanceMap = {
 
 module.exports = ReactInstanceMap;
 
-},{}],70:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactLifeCycle.js":[function(require,module,exports){
 /**
  * Copyright 2015, Facebook, Inc.
  * All rights reserved.
@@ -11882,7 +11881,7 @@ var ReactLifeCycle = {
 
 module.exports = ReactLifeCycle;
 
-},{}],71:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMarkupChecksum.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -11930,7 +11929,7 @@ var ReactMarkupChecksum = {
 
 module.exports = ReactMarkupChecksum;
 
-},{"./adler32":108}],72:[function(require,module,exports){
+},{"./adler32":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/adler32.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMount.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -12821,7 +12820,7 @@ ReactPerf.measureMethods(ReactMount, 'ReactMount', {
 module.exports = ReactMount;
 
 }).call(this,require('_process'))
-},{"./DOMProperty":11,"./ReactBrowserEventEmitter":32,"./ReactCurrentOwner":41,"./ReactElement":59,"./ReactElementValidator":60,"./ReactEmptyComponent":61,"./ReactInstanceHandles":68,"./ReactInstanceMap":69,"./ReactMarkupChecksum":71,"./ReactPerf":77,"./ReactReconciler":83,"./ReactUpdateQueue":88,"./ReactUpdates":89,"./containsNode":111,"./emptyObject":117,"./getReactRootElementInContainer":131,"./instantiateReactComponent":136,"./invariant":137,"./setInnerHTML":150,"./shouldUpdateReactComponent":153,"./warning":156,"_process":159}],73:[function(require,module,exports){
+},{"./DOMProperty":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMProperty.js","./ReactBrowserEventEmitter":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactCurrentOwner":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElementValidator.js","./ReactEmptyComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactEmptyComponent.js","./ReactInstanceHandles":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceHandles.js","./ReactInstanceMap":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceMap.js","./ReactMarkupChecksum":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMarkupChecksum.js","./ReactPerf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactReconciler.js","./ReactUpdateQueue":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdateQueue.js","./ReactUpdates":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdates.js","./containsNode":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/containsNode.js","./emptyObject":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyObject.js","./getReactRootElementInContainer":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getReactRootElementInContainer.js","./instantiateReactComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/instantiateReactComponent.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./setInnerHTML":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/setInnerHTML.js","./shouldUpdateReactComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/shouldUpdateReactComponent.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMultiChild.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -13251,7 +13250,7 @@ var ReactMultiChild = {
 
 module.exports = ReactMultiChild;
 
-},{"./ReactChildReconciler":33,"./ReactComponentEnvironment":38,"./ReactMultiChildUpdateTypes":74,"./ReactReconciler":83}],74:[function(require,module,exports){
+},{"./ReactChildReconciler":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactChildReconciler.js","./ReactComponentEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactComponentEnvironment.js","./ReactMultiChildUpdateTypes":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./ReactReconciler":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactReconciler.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMultiChildUpdateTypes.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -13284,7 +13283,7 @@ var ReactMultiChildUpdateTypes = keyMirror({
 
 module.exports = ReactMultiChildUpdateTypes;
 
-},{"./keyMirror":142}],75:[function(require,module,exports){
+},{"./keyMirror":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyMirror.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactNativeComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -13391,7 +13390,7 @@ var ReactNativeComponent = {
 module.exports = ReactNativeComponent;
 
 }).call(this,require('_process'))
-},{"./Object.assign":28,"./invariant":137,"_process":159}],76:[function(require,module,exports){
+},{"./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactOwner.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -13503,7 +13502,7 @@ var ReactOwner = {
 module.exports = ReactOwner;
 
 }).call(this,require('_process'))
-},{"./invariant":137,"_process":159}],77:[function(require,module,exports){
+},{"./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPerf.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -13607,7 +13606,7 @@ function _noMeasure(objName, fnName, func) {
 module.exports = ReactPerf;
 
 }).call(this,require('_process'))
-},{"_process":159}],78:[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPropTypeLocationNames.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -13635,7 +13634,7 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = ReactPropTypeLocationNames;
 
 }).call(this,require('_process'))
-},{"_process":159}],79:[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPropTypeLocations.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -13659,7 +13658,7 @@ var ReactPropTypeLocations = keyMirror({
 
 module.exports = ReactPropTypeLocations;
 
-},{"./keyMirror":142}],80:[function(require,module,exports){
+},{"./keyMirror":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyMirror.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPropTypes.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14008,7 +14007,7 @@ function getPreciseType(propValue) {
 
 module.exports = ReactPropTypes;
 
-},{"./ReactElement":59,"./ReactFragment":65,"./ReactPropTypeLocationNames":78,"./emptyFunction":116}],81:[function(require,module,exports){
+},{"./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactFragment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactFragment.js","./ReactPropTypeLocationNames":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPropTypeLocationNames.js","./emptyFunction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyFunction.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPutListenerQueue.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14064,7 +14063,7 @@ PooledClass.addPoolingTo(ReactPutListenerQueue);
 
 module.exports = ReactPutListenerQueue;
 
-},{"./Object.assign":28,"./PooledClass":29,"./ReactBrowserEventEmitter":32}],82:[function(require,module,exports){
+},{"./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/PooledClass.js","./ReactBrowserEventEmitter":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserEventEmitter.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactReconcileTransaction.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14240,7 +14239,7 @@ PooledClass.addPoolingTo(ReactReconcileTransaction);
 
 module.exports = ReactReconcileTransaction;
 
-},{"./CallbackQueue":7,"./Object.assign":28,"./PooledClass":29,"./ReactBrowserEventEmitter":32,"./ReactInputSelection":67,"./ReactPutListenerQueue":81,"./Transaction":105}],83:[function(require,module,exports){
+},{"./CallbackQueue":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/PooledClass.js","./ReactBrowserEventEmitter":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactInputSelection":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInputSelection.js","./ReactPutListenerQueue":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPutListenerQueue.js","./Transaction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Transaction.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactReconciler.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -14364,7 +14363,7 @@ var ReactReconciler = {
 module.exports = ReactReconciler;
 
 }).call(this,require('_process'))
-},{"./ReactElementValidator":60,"./ReactRef":84,"_process":159}],84:[function(require,module,exports){
+},{"./ReactElementValidator":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElementValidator.js","./ReactRef":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactRef.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactRef.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14435,7 +14434,7 @@ ReactRef.detachRefs = function(instance, element) {
 
 module.exports = ReactRef;
 
-},{"./ReactOwner":76}],85:[function(require,module,exports){
+},{"./ReactOwner":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactOwner.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14466,7 +14465,7 @@ var ReactRootIndex = {
 
 module.exports = ReactRootIndex;
 
-},{}],86:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactServerRendering.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -14548,7 +14547,7 @@ module.exports = {
 };
 
 }).call(this,require('_process'))
-},{"./ReactElement":59,"./ReactInstanceHandles":68,"./ReactMarkupChecksum":71,"./ReactServerRenderingTransaction":87,"./emptyObject":117,"./instantiateReactComponent":136,"./invariant":137,"_process":159}],87:[function(require,module,exports){
+},{"./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactInstanceHandles":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceHandles.js","./ReactMarkupChecksum":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMarkupChecksum.js","./ReactServerRenderingTransaction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactServerRenderingTransaction.js","./emptyObject":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyObject.js","./instantiateReactComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/instantiateReactComponent.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactServerRenderingTransaction.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -14661,7 +14660,7 @@ PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 module.exports = ReactServerRenderingTransaction;
 
-},{"./CallbackQueue":7,"./Object.assign":28,"./PooledClass":29,"./ReactPutListenerQueue":81,"./Transaction":105,"./emptyFunction":116}],88:[function(require,module,exports){
+},{"./CallbackQueue":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/PooledClass.js","./ReactPutListenerQueue":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPutListenerQueue.js","./Transaction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Transaction.js","./emptyFunction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyFunction.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdateQueue.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -14960,7 +14959,7 @@ var ReactUpdateQueue = {
 module.exports = ReactUpdateQueue;
 
 }).call(this,require('_process'))
-},{"./Object.assign":28,"./ReactCurrentOwner":41,"./ReactElement":59,"./ReactInstanceMap":69,"./ReactLifeCycle":70,"./ReactUpdates":89,"./invariant":137,"./warning":156,"_process":159}],89:[function(require,module,exports){
+},{"./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./ReactCurrentOwner":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactInstanceMap":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceMap.js","./ReactLifeCycle":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactLifeCycle.js","./ReactUpdates":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdates.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactUpdates.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -15242,7 +15241,7 @@ var ReactUpdates = {
 module.exports = ReactUpdates;
 
 }).call(this,require('_process'))
-},{"./CallbackQueue":7,"./Object.assign":28,"./PooledClass":29,"./ReactCurrentOwner":41,"./ReactPerf":77,"./ReactReconciler":83,"./Transaction":105,"./invariant":137,"./warning":156,"_process":159}],90:[function(require,module,exports){
+},{"./CallbackQueue":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/CallbackQueue.js","./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/PooledClass.js","./ReactCurrentOwner":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactCurrentOwner.js","./ReactPerf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactPerf.js","./ReactReconciler":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactReconciler.js","./Transaction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Transaction.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SVGDOMPropertyConfig.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15334,7 +15333,7 @@ var SVGDOMPropertyConfig = {
 
 module.exports = SVGDOMPropertyConfig;
 
-},{"./DOMProperty":11}],91:[function(require,module,exports){
+},{"./DOMProperty":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/DOMProperty.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SelectEventPlugin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15529,7 +15528,7 @@ var SelectEventPlugin = {
 
 module.exports = SelectEventPlugin;
 
-},{"./EventConstants":16,"./EventPropagators":21,"./ReactInputSelection":67,"./SyntheticEvent":97,"./getActiveElement":123,"./isTextInputElement":140,"./keyOf":143,"./shallowEqual":152}],92:[function(require,module,exports){
+},{"./EventConstants":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPropagators.js","./ReactInputSelection":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInputSelection.js","./SyntheticEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticEvent.js","./getActiveElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getActiveElement.js","./isTextInputElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/isTextInputElement.js","./keyOf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyOf.js","./shallowEqual":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/shallowEqual.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ServerReactRootIndex.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15560,7 +15559,7 @@ var ServerReactRootIndex = {
 
 module.exports = ServerReactRootIndex;
 
-},{}],93:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SimpleEventPlugin.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -15988,7 +15987,7 @@ var SimpleEventPlugin = {
 module.exports = SimpleEventPlugin;
 
 }).call(this,require('_process'))
-},{"./EventConstants":16,"./EventPluginUtils":20,"./EventPropagators":21,"./SyntheticClipboardEvent":94,"./SyntheticDragEvent":96,"./SyntheticEvent":97,"./SyntheticFocusEvent":98,"./SyntheticKeyboardEvent":100,"./SyntheticMouseEvent":101,"./SyntheticTouchEvent":102,"./SyntheticUIEvent":103,"./SyntheticWheelEvent":104,"./getEventCharCode":124,"./invariant":137,"./keyOf":143,"./warning":156,"_process":159}],94:[function(require,module,exports){
+},{"./EventConstants":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventConstants.js","./EventPluginUtils":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPluginUtils.js","./EventPropagators":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/EventPropagators.js","./SyntheticClipboardEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticClipboardEvent.js","./SyntheticDragEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticDragEvent.js","./SyntheticEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticEvent.js","./SyntheticFocusEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticFocusEvent.js","./SyntheticKeyboardEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticKeyboardEvent.js","./SyntheticMouseEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticMouseEvent.js","./SyntheticTouchEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticTouchEvent.js","./SyntheticUIEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticUIEvent.js","./SyntheticWheelEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticWheelEvent.js","./getEventCharCode":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventCharCode.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./keyOf":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyOf.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticClipboardEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16033,7 +16032,7 @@ SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 
 module.exports = SyntheticClipboardEvent;
 
-},{"./SyntheticEvent":97}],95:[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticEvent.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticCompositionEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16078,7 +16077,7 @@ SyntheticEvent.augmentClass(
 
 module.exports = SyntheticCompositionEvent;
 
-},{"./SyntheticEvent":97}],96:[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticEvent.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticDragEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16117,7 +16116,7 @@ SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 
 module.exports = SyntheticDragEvent;
 
-},{"./SyntheticMouseEvent":101}],97:[function(require,module,exports){
+},{"./SyntheticMouseEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16283,7 +16282,7 @@ PooledClass.addPoolingTo(SyntheticEvent, PooledClass.threeArgumentPooler);
 
 module.exports = SyntheticEvent;
 
-},{"./Object.assign":28,"./PooledClass":29,"./emptyFunction":116,"./getEventTarget":127}],98:[function(require,module,exports){
+},{"./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./PooledClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/PooledClass.js","./emptyFunction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyFunction.js","./getEventTarget":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventTarget.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticFocusEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16322,7 +16321,7 @@ SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 
 module.exports = SyntheticFocusEvent;
 
-},{"./SyntheticUIEvent":103}],99:[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticUIEvent.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticInputEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16368,7 +16367,7 @@ SyntheticEvent.augmentClass(
 
 module.exports = SyntheticInputEvent;
 
-},{"./SyntheticEvent":97}],100:[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticEvent.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticKeyboardEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16455,7 +16454,7 @@ SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 
 module.exports = SyntheticKeyboardEvent;
 
-},{"./SyntheticUIEvent":103,"./getEventCharCode":124,"./getEventKey":125,"./getEventModifierState":126}],101:[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticUIEvent.js","./getEventCharCode":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventCharCode.js","./getEventKey":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventKey.js","./getEventModifierState":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventModifierState.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticMouseEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16536,7 +16535,7 @@ SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 
 module.exports = SyntheticMouseEvent;
 
-},{"./SyntheticUIEvent":103,"./ViewportMetrics":106,"./getEventModifierState":126}],102:[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticUIEvent.js","./ViewportMetrics":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ViewportMetrics.js","./getEventModifierState":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventModifierState.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticTouchEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16584,7 +16583,7 @@ SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 
 module.exports = SyntheticTouchEvent;
 
-},{"./SyntheticUIEvent":103,"./getEventModifierState":126}],103:[function(require,module,exports){
+},{"./SyntheticUIEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticUIEvent.js","./getEventModifierState":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventModifierState.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticUIEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16646,7 +16645,7 @@ SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 
 module.exports = SyntheticUIEvent;
 
-},{"./SyntheticEvent":97,"./getEventTarget":127}],104:[function(require,module,exports){
+},{"./SyntheticEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticEvent.js","./getEventTarget":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventTarget.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticWheelEvent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16707,7 +16706,7 @@ SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 
 module.exports = SyntheticWheelEvent;
 
-},{"./SyntheticMouseEvent":101}],105:[function(require,module,exports){
+},{"./SyntheticMouseEvent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Transaction.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16948,7 +16947,7 @@ var Transaction = {
 module.exports = Transaction;
 
 }).call(this,require('_process'))
-},{"./invariant":137,"_process":159}],106:[function(require,module,exports){
+},{"./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ViewportMetrics.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16977,7 +16976,7 @@ var ViewportMetrics = {
 
 module.exports = ViewportMetrics;
 
-},{}],107:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/accumulateInto.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -17043,7 +17042,7 @@ function accumulateInto(current, next) {
 module.exports = accumulateInto;
 
 }).call(this,require('_process'))
-},{"./invariant":137,"_process":159}],108:[function(require,module,exports){
+},{"./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/adler32.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17077,7 +17076,7 @@ function adler32(data) {
 
 module.exports = adler32;
 
-},{}],109:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/camelize.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17109,7 +17108,7 @@ function camelize(string) {
 
 module.exports = camelize;
 
-},{}],110:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/camelizeStyleName.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -17151,7 +17150,7 @@ function camelizeStyleName(string) {
 
 module.exports = camelizeStyleName;
 
-},{"./camelize":109}],111:[function(require,module,exports){
+},{"./camelize":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/camelize.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/containsNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17195,7 +17194,7 @@ function containsNode(outerNode, innerNode) {
 
 module.exports = containsNode;
 
-},{"./isTextNode":141}],112:[function(require,module,exports){
+},{"./isTextNode":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/isTextNode.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/createArrayFromMixed.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17281,7 +17280,7 @@ function createArrayFromMixed(obj) {
 
 module.exports = createArrayFromMixed;
 
-},{"./toArray":154}],113:[function(require,module,exports){
+},{"./toArray":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/toArray.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/createFullPageComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -17343,7 +17342,7 @@ function createFullPageComponent(tag) {
 module.exports = createFullPageComponent;
 
 }).call(this,require('_process'))
-},{"./ReactClass":35,"./ReactElement":59,"./invariant":137,"_process":159}],114:[function(require,module,exports){
+},{"./ReactClass":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactClass.js","./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/createNodesFromMarkup.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -17433,7 +17432,7 @@ function createNodesFromMarkup(markup, handleScript) {
 module.exports = createNodesFromMarkup;
 
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":22,"./createArrayFromMixed":112,"./getMarkupWrap":129,"./invariant":137,"_process":159}],115:[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js","./createArrayFromMixed":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/createArrayFromMixed.js","./getMarkupWrap":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getMarkupWrap.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/dangerousStyleValue.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17491,7 +17490,7 @@ function dangerousStyleValue(name, value) {
 
 module.exports = dangerousStyleValue;
 
-},{"./CSSProperty":5}],116:[function(require,module,exports){
+},{"./CSSProperty":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/CSSProperty.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyFunction.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17525,7 +17524,7 @@ emptyFunction.thatReturnsArgument = function(arg) { return arg; };
 
 module.exports = emptyFunction;
 
-},{}],117:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyObject.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -17549,7 +17548,7 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = emptyObject;
 
 }).call(this,require('_process'))
-},{"_process":159}],118:[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/escapeTextContentForBrowser.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17589,7 +17588,7 @@ function escapeTextContentForBrowser(text) {
 
 module.exports = escapeTextContentForBrowser;
 
-},{}],119:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/findDOMNode.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -17662,7 +17661,7 @@ function findDOMNode(componentOrElement) {
 module.exports = findDOMNode;
 
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":41,"./ReactInstanceMap":69,"./ReactMount":72,"./invariant":137,"./isNode":139,"./warning":156,"_process":159}],120:[function(require,module,exports){
+},{"./ReactCurrentOwner":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactCurrentOwner.js","./ReactInstanceMap":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceMap.js","./ReactMount":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactMount.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./isNode":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/isNode.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/flattenChildren.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -17720,7 +17719,7 @@ function flattenChildren(children) {
 module.exports = flattenChildren;
 
 }).call(this,require('_process'))
-},{"./traverseAllChildren":155,"./warning":156,"_process":159}],121:[function(require,module,exports){
+},{"./traverseAllChildren":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/traverseAllChildren.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/focusNode.js":[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -17749,7 +17748,7 @@ function focusNode(node) {
 
 module.exports = focusNode;
 
-},{}],122:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/forEachAccumulated.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17780,7 +17779,7 @@ var forEachAccumulated = function(arr, cb, scope) {
 
 module.exports = forEachAccumulated;
 
-},{}],123:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getActiveElement.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17809,7 +17808,7 @@ function getActiveElement() /*?DOMElement*/ {
 
 module.exports = getActiveElement;
 
-},{}],124:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventCharCode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17861,7 +17860,7 @@ function getEventCharCode(nativeEvent) {
 
 module.exports = getEventCharCode;
 
-},{}],125:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventKey.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17966,7 +17965,7 @@ function getEventKey(nativeEvent) {
 
 module.exports = getEventKey;
 
-},{"./getEventCharCode":124}],126:[function(require,module,exports){
+},{"./getEventCharCode":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventCharCode.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventModifierState.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18013,7 +18012,7 @@ function getEventModifierState(nativeEvent) {
 
 module.exports = getEventModifierState;
 
-},{}],127:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getEventTarget.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18044,7 +18043,7 @@ function getEventTarget(nativeEvent) {
 
 module.exports = getEventTarget;
 
-},{}],128:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getIteratorFn.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18088,7 +18087,7 @@ function getIteratorFn(maybeIterable) {
 
 module.exports = getIteratorFn;
 
-},{}],129:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getMarkupWrap.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18205,7 +18204,7 @@ function getMarkupWrap(nodeName) {
 module.exports = getMarkupWrap;
 
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":22,"./invariant":137,"_process":159}],130:[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getNodeForCharacterOffset.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18280,7 +18279,7 @@ function getNodeForCharacterOffset(root, offset) {
 
 module.exports = getNodeForCharacterOffset;
 
-},{}],131:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getReactRootElementInContainer.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18315,7 +18314,7 @@ function getReactRootElementInContainer(container) {
 
 module.exports = getReactRootElementInContainer;
 
-},{}],132:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getTextContentAccessor.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18352,7 +18351,7 @@ function getTextContentAccessor() {
 
 module.exports = getTextContentAccessor;
 
-},{"./ExecutionEnvironment":22}],133:[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getUnboundedScrollPosition.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18392,7 +18391,7 @@ function getUnboundedScrollPosition(scrollable) {
 
 module.exports = getUnboundedScrollPosition;
 
-},{}],134:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/hyphenate.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18425,7 +18424,7 @@ function hyphenate(string) {
 
 module.exports = hyphenate;
 
-},{}],135:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/hyphenateStyleName.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18466,7 +18465,7 @@ function hyphenateStyleName(string) {
 
 module.exports = hyphenateStyleName;
 
-},{"./hyphenate":134}],136:[function(require,module,exports){
+},{"./hyphenate":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/hyphenate.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/instantiateReactComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18604,7 +18603,7 @@ function instantiateReactComponent(node, parentCompositeType) {
 module.exports = instantiateReactComponent;
 
 }).call(this,require('_process'))
-},{"./Object.assign":28,"./ReactCompositeComponent":39,"./ReactEmptyComponent":61,"./ReactNativeComponent":75,"./invariant":137,"./warning":156,"_process":159}],137:[function(require,module,exports){
+},{"./Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js","./ReactCompositeComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactCompositeComponent.js","./ReactEmptyComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactEmptyComponent.js","./ReactNativeComponent":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactNativeComponent.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18661,7 +18660,7 @@ var invariant = function(condition, format, a, b, c, d, e, f) {
 module.exports = invariant;
 
 }).call(this,require('_process'))
-},{"_process":159}],138:[function(require,module,exports){
+},{"_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/isEventSupported.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18726,7 +18725,7 @@ function isEventSupported(eventNameSuffix, capture) {
 
 module.exports = isEventSupported;
 
-},{"./ExecutionEnvironment":22}],139:[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/isNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18753,7 +18752,7 @@ function isNode(object) {
 
 module.exports = isNode;
 
-},{}],140:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/isTextInputElement.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18796,7 +18795,7 @@ function isTextInputElement(elem) {
 
 module.exports = isTextInputElement;
 
-},{}],141:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/isTextNode.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18821,7 +18820,7 @@ function isTextNode(object) {
 
 module.exports = isTextNode;
 
-},{"./isNode":139}],142:[function(require,module,exports){
+},{"./isNode":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/isNode.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyMirror.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18876,7 +18875,7 @@ var keyMirror = function(obj) {
 module.exports = keyMirror;
 
 }).call(this,require('_process'))
-},{"./invariant":137,"_process":159}],143:[function(require,module,exports){
+},{"./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/keyOf.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18912,7 +18911,7 @@ var keyOf = function(oneKeyObj) {
 
 module.exports = keyOf;
 
-},{}],144:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/mapObject.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18965,7 +18964,7 @@ function mapObject(object, callback, context) {
 
 module.exports = mapObject;
 
-},{}],145:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/memoizeStringOnly.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18998,7 +18997,7 @@ function memoizeStringOnly(callback) {
 
 module.exports = memoizeStringOnly;
 
-},{}],146:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/onlyChild.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -19038,7 +19037,7 @@ function onlyChild(children) {
 module.exports = onlyChild;
 
 }).call(this,require('_process'))
-},{"./ReactElement":59,"./invariant":137,"_process":159}],147:[function(require,module,exports){
+},{"./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/performance.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19066,7 +19065,7 @@ if (ExecutionEnvironment.canUseDOM) {
 
 module.exports = performance || {};
 
-},{"./ExecutionEnvironment":22}],148:[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/performanceNow.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19094,7 +19093,7 @@ var performanceNow = performance.now.bind(performance);
 
 module.exports = performanceNow;
 
-},{"./performance":147}],149:[function(require,module,exports){
+},{"./performance":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/performance.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/quoteAttributeValueForBrowser.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19122,7 +19121,7 @@ function quoteAttributeValueForBrowser(value) {
 
 module.exports = quoteAttributeValueForBrowser;
 
-},{"./escapeTextContentForBrowser":118}],150:[function(require,module,exports){
+},{"./escapeTextContentForBrowser":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/escapeTextContentForBrowser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/setInnerHTML.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19211,7 +19210,7 @@ if (ExecutionEnvironment.canUseDOM) {
 
 module.exports = setInnerHTML;
 
-},{"./ExecutionEnvironment":22}],151:[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/setTextContent.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19253,7 +19252,7 @@ if (ExecutionEnvironment.canUseDOM) {
 
 module.exports = setTextContent;
 
-},{"./ExecutionEnvironment":22,"./escapeTextContentForBrowser":118,"./setInnerHTML":150}],152:[function(require,module,exports){
+},{"./ExecutionEnvironment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ExecutionEnvironment.js","./escapeTextContentForBrowser":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/escapeTextContentForBrowser.js","./setInnerHTML":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/setInnerHTML.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/shallowEqual.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19297,7 +19296,7 @@ function shallowEqual(objA, objB) {
 
 module.exports = shallowEqual;
 
-},{}],153:[function(require,module,exports){
+},{}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/shouldUpdateReactComponent.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -19401,7 +19400,7 @@ function shouldUpdateReactComponent(prevElement, nextElement) {
 module.exports = shouldUpdateReactComponent;
 
 }).call(this,require('_process'))
-},{"./warning":156,"_process":159}],154:[function(require,module,exports){
+},{"./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/toArray.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -19473,7 +19472,7 @@ function toArray(obj) {
 module.exports = toArray;
 
 }).call(this,require('_process'))
-},{"./invariant":137,"_process":159}],155:[function(require,module,exports){
+},{"./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/traverseAllChildren.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -19726,7 +19725,7 @@ function traverseAllChildren(children, callback, traverseContext) {
 module.exports = traverseAllChildren;
 
 }).call(this,require('_process'))
-},{"./ReactElement":59,"./ReactFragment":65,"./ReactInstanceHandles":68,"./getIteratorFn":128,"./invariant":137,"./warning":156,"_process":159}],156:[function(require,module,exports){
+},{"./ReactElement":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactElement.js","./ReactFragment":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactFragment.js","./ReactInstanceHandles":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/ReactInstanceHandles.js","./getIteratorFn":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/getIteratorFn.js","./invariant":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/invariant.js","./warning":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/warning.js":[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -19789,10 +19788,10 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = warning;
 
 }).call(this,require('_process'))
-},{"./emptyFunction":116,"_process":159}],157:[function(require,module,exports){
+},{"./emptyFunction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyFunction.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/react.js":[function(require,module,exports){
 module.exports = require('./lib/React');
 
-},{"./lib/React":30}],158:[function(require,module,exports){
+},{"./lib/React":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/React.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/svg-body/index.js":[function(require,module,exports){
 'use strict';
 
 module.exports = function (svgString) {
@@ -19803,43 +19802,73 @@ module.exports = function (svgString) {
   .replace(/ width="\d+(\.\d+)?(px)?"/gi, '').replace(/ height="\d+(\.\d+)?(px)?"/gi, '');
 };
 
-},{}],159:[function(require,module,exports){
+},{}],"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js":[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
-var queue = [];
-var draining = false;
 
-function drainQueue() {
-    if (draining) {
-        return;
+process.nextTick = (function () {
+    var canSetImmediate = typeof window !== 'undefined'
+    && window.setImmediate;
+    var canMutationObserver = typeof window !== 'undefined'
+    && window.MutationObserver;
+    var canPost = typeof window !== 'undefined'
+    && window.postMessage && window.addEventListener
+    ;
+
+    if (canSetImmediate) {
+        return function (f) { return window.setImmediate(f) };
     }
-    draining = true;
-    var currentQueue;
-    var len = queue.length;
-    while(len) {
-        currentQueue = queue;
-        queue = [];
-        var i = -1;
-        while (++i < len) {
-            currentQueue[i]();
-        }
-        len = queue.length;
+
+    var queue = [];
+
+    if (canMutationObserver) {
+        var hiddenDiv = document.createElement("div");
+        var observer = new MutationObserver(function () {
+            var queueList = queue.slice();
+            queue.length = 0;
+            queueList.forEach(function (fn) {
+                fn();
+            });
+        });
+
+        observer.observe(hiddenDiv, { attributes: true });
+
+        return function nextTick(fn) {
+            if (!queue.length) {
+                hiddenDiv.setAttribute('yes', 'no');
+            }
+            queue.push(fn);
+        };
     }
-    draining = false;
-}
-process.nextTick = function (fun) {
-    queue.push(fun);
-    if (!draining) {
-        setTimeout(drainQueue, 0);
+
+    if (canPost) {
+        window.addEventListener('message', function (ev) {
+            var source = ev.source;
+            if ((source === window || source === null) && ev.data === 'process-tick') {
+                ev.stopPropagation();
+                if (queue.length > 0) {
+                    var fn = queue.shift();
+                    fn();
+                }
+            }
+        }, true);
+
+        return function nextTick(fn) {
+            queue.push(fn);
+            window.postMessage('process-tick', '*');
+        };
     }
-};
+
+    return function nextTick(fn) {
+        setTimeout(fn, 0);
+    };
+})();
 
 process.title = 'browser';
 process.browser = true;
 process.env = {};
 process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
 
 function noop() {}
 
@@ -19860,6 +19889,5 @@ process.cwd = function () { return '/' };
 process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
-process.umask = function() { return 0; };
 
-},{}]},{},[1]);
+},{}]},{},["/Users/felix/Workspace/publitas/react-svg-icons/example/example.jsx"]);

@@ -24,9 +24,14 @@ React.render(
     <br/>
 
     <Icon name='react-icon'
-      width='64'
-      height='64'
+      width='200'
+      height='200'
       color='#eea43c'/>
+
+    <Icon name='right'
+      width='200'
+      height='200'
+      color='red'/>
 
   </div>,
   document.getElementById('example')

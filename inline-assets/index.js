@@ -6,6 +6,6 @@ module.exports = function(file, opts) {
   if (/\.json$/.test(file)) return through();
 
   return staticModule({
-    './inline-svg': includeSvg
+    'include-svg': includeSvg
   }, {});
 };

@@ -6,6 +6,8 @@ module.exports = function(file) {
   if (/\.json$/.test(file)) return through();
 
   return staticModule({
-    './lib/resolve-asset-path': resolveAssetPath
+    './lib/resolve-asset-path': function() {
+      return JSON.stringify(resolveAssetPath());
+    }
   }, {});
 };

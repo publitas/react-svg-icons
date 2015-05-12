@@ -1,10 +1,10 @@
 var React = require('react');
 var getSvgBody = require('./lib/get-svg-body');
-var inlineSvg = require('./inline-svg');
+var includeSvg = require('include-svg');
 var assign = require('react/lib/Object.assign');
 var resolveAssetPath = require('./lib/resolve-asset-path');
 
-var assets = inlineSvg(resolveAssetPath()); // asset path will be inlined
+var assets = includeSvg(resolveAssetPath());
 var icons = {};
 
 var Icon = React.createClass({

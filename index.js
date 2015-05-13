@@ -38,19 +38,21 @@ var Icon = React.createClass({
       this.props.style
     );
 
-    return React.createElement('svg', {
-      viewBox: icon.viewBox,
-      preserveAspectRatio: 'xMidYMid meet',  // preserve aspect ratio and center
-      width: this.props.width,
-      height: this.props.height,
-      style: style,
-      fill: this.props.color,
-      dangerouslySetInnerHTML: { __html:
-        icon.body
-          .replace(/(stroke)="([^"]+)"/gi, replaceColor(this.props.color))
-          .replace(/(fill)="([^"]+)"/gi, replaceColor(this.props.color))
+    var props = assign({},
+      this.props,
+      {
+        viewBox: icon.viewBox,
+        preserveAspectRatio: 'xMidYMid meet',  // preserve aspect ratio and center
+        style: style,
+        fill: this.props.color,
+        dangerouslySetInnerHTML: { __html:
+          icon.body
+            .replace(/(stroke)="([^"]+)"/gi, replaceColor(this.props.color))
+            .replace(/(fill)="([^"]+)"/gi, replaceColor(this.props.color))
       }
     });
+
+    return React.createElement('svg', props);
   }
 });
 

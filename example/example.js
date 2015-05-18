@@ -21,35 +21,31 @@ React.render(React.createElement(
   React.createElement(Icon, { name: 'react-icon',
     width: '256',
     height: '256',
-    color: '#4cd695' }),
+    color: '#d7675a',
+    onClick: function () {
+      alert('yay');
+    } }),
   React.createElement('br', null),
   React.createElement(Icon, { name: 'react-icon',
     width: '128',
     height: '128',
-    color: '#d8494c' }),
+    color: '#2e5765' }),
   React.createElement('br', null),
   React.createElement(Icon, { name: 'react-icon',
     width: '200',
     height: '200',
-    color: '#eea43c' }),
-  React.createElement(Icon, { name: 'right',
-    width: '200',
-    height: '200',
-    color: 'red' })
+    color: '#999b95' })
 ), document.getElementById('example'));
 
 },{"../":"/Users/felix/Workspace/publitas/react-svg-icons/index.js","react":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/react.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/index.js":[function(require,module,exports){
 'use strict';
 
 var React = require('react');
-var getSvgBody = require('./svg-body');
 
 var assign = require('react/lib/Object.assign');
 
-var assets = {"right": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"6\" height=\"10\" viewBox=\"0 0 6 10\"><path d=\"M1.537.15c-.19-.2-.496-.2-.684 0L.17.865c-.19.197-.19.518 0 .715l3.295 3.406L.143 8.42c-.19.198-.19.52 0 .716l.684.717c.188.197.494.197.684 0l4.35-4.508c.19-.198.19-.52 0-.717L1.538.148z\"/></svg>",
-"react-icon": "<svg width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" xmlns=\"http://www.w3.org/2000/svg\"><title>react-icon</title><g fill=\"none\" fill-rule=\"evenodd\"><ellipse stroke=\"#979797\" stroke-width=\"2\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><ellipse stroke=\"#979797\" stroke-width=\"2\" transform=\"rotate(60 33 31)\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><ellipse stroke=\"#979797\" stroke-width=\"2\" transform=\"rotate(-60 33 31)\" cx=\"33\" cy=\"31\" rx=\"28\" ry=\"11\"/><circle fill=\"#9B9B9B\" cx=\"33\" cy=\"31\" r=\"5\"/></g></svg>"}; // asset path will be inlined
-var icons = {};
 
+var icons = {};
 var Icon = React.createClass({
   displayName: 'Icon',
 
@@ -68,52 +64,89 @@ var Icon = React.createClass({
     };
   },
 
+  renderFallback: function renderFallback() {
+    return React.createElement('div', { style: { color: '#c1272a' } }, 'Could not find icon called "' + this.props.name + '"');
+  },
+
   render: function render() {
-    var icon = resolveIcon(this.props.name);
-
-    if (!icon) {
-      return React.createElement('div', { style: { color: '#c1272a' } }, 'Could not find icon called "' + this.props.name + '"');
-    }
-
-    var style = assign({ verticalAlign: 'middle' }, this.props.style);
-
-    return React.createElement('svg', {
-      viewBox: icon.viewBox,
+    var renderIcon = icons[this.props.name] || this.renderFallback;
+    var props = assign({}, this.props, {
       preserveAspectRatio: 'xMidYMid meet', // preserve aspect ratio and center
-      width: this.props.width,
-      height: this.props.height,
-      style: style,
-      fill: this.props.color,
-      dangerouslySetInnerHTML: { __html: icon.body.replace(/(stroke)="([^"]+)"/gi, replaceColor(this.props.color)).replace(/(fill)="([^"]+)"/gi, replaceColor(this.props.color))
-      }
+      style: assign({ verticalAlign: 'middle' }, this.props.style),
+      fill: this.props.color
     });
+
+    return renderIcon(props);
   }
 });
 
-// TODO: do this as a pre-process step
-function resolveIcon(name) {
-  var svgString;
-
-  if (icons[name]) return icons[name];
-  if (!(svgString = assets[name])) return null;
-
-  icons[name] = {
-    body: getSvgBody(svgString),
-    viewBox: (svgString.match(/viewBox=['"]([^'"]*)['"]/) || [])[1]
-  };
-
-  return icons[name];
-}
-
-function replaceColor(color) {
-  return function (_, type, prevColor) {
-    return prevColor === 'none' ? type + '="none"' : type + '="' + color + '"';
-  };
-}
-
+(function (err, svgIcons) {
+    if (err) {
+        throw new Error('Error loading icons: ' + err);
+    }
+    icons = svgIcons;
+})(null,{ "react-icon":function anonymous(params) {
+var _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];
+        for (var key in source) {
+            if (Object.prototype.hasOwnProperty.call(source, key)) {
+                target[key] = source[key];
+            }
+        }
+    }
+    return target;
+};
+return React.createElement('svg', _extends({}, params, { viewBox: '0 0 64 64' }), React.createElement('title', null, 'react-icon'), React.createElement('g', {
+    fill: 'none',
+    fillRule: 'evenodd'
+}, React.createElement('ellipse', {
+    stroke: params.color,
+    strokeWidth: '2',
+    cx: '33',
+    cy: '31',
+    rx: '28',
+    ry: '11'
+}), React.createElement('ellipse', {
+    stroke: params.color,
+    strokeWidth: '2',
+    transform: 'rotate(60 33 31)',
+    cx: '33',
+    cy: '31',
+    rx: '28',
+    ry: '11'
+}), React.createElement('ellipse', {
+    stroke: params.color,
+    strokeWidth: '2',
+    transform: 'rotate(-60 33 31)',
+    cx: '33',
+    cy: '31',
+    rx: '28',
+    ry: '11'
+}), React.createElement('circle', {
+    fill: params.color,
+    cx: '33',
+    cy: '31',
+    r: '5'
+})));;
+},
+  right:function anonymous(params) {
+var _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];
+        for (var key in source) {
+            if (Object.prototype.hasOwnProperty.call(source, key)) {
+                target[key] = source[key];
+            }
+        }
+    }
+    return target;
+};
+return React.createElement('svg', _extends({}, params, { viewBox: '0 0 6 10' }), React.createElement('path', { d: 'M1.537.15c-.19-.2-.496-.2-.684 0L.17.865c-.19.197-.19.518 0 .715l3.295 3.406L.143 8.42c-.19.198-.19.52 0 .716l.684.717c.188.197.494.197.684 0l4.35-4.508c.19-.198.19-.52 0-.717L1.538.148z' }));;
+} });
 module.exports = Icon;
 
-},{"./svg-body":"/Users/felix/Workspace/publitas/react-svg-icons/svg-body/index.js","react":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/react.js","react/lib/Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/AutoFocusMixin.js":[function(require,module,exports){
+},{"react":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/react.js","react/lib/Object.assign":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/Object.assign.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/AutoFocusMixin.js":[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4421,7 +4454,7 @@ if ("production" !== process.env.NODE_ENV) {
       if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined') {
         console.debug(
           'Download the React DevTools for a better development experience: ' +
-          'http://fb.me/react-devtools'
+          'https://fb.me/react-devtools'
         );
       }
     }
@@ -4448,7 +4481,7 @@ if ("production" !== process.env.NODE_ENV) {
       if (!expectedFeatures[i]) {
         console.error(
           'One or more ES5 shim/shams expected by React are not available: ' +
-          'http://fb.me/react-warning-polyfills'
+          'https://fb.me/react-warning-polyfills'
         );
         break;
       }
@@ -4456,7 +4489,7 @@ if ("production" !== process.env.NODE_ENV) {
   }
 }
 
-React.version = '0.13.2';
+React.version = '0.13.3';
 
 module.exports = React;
 
@@ -5963,7 +5996,7 @@ var ReactClass = {
         ("production" !== process.env.NODE_ENV ? warning(
           this instanceof Constructor,
           'Something is calling a React component directly. Use a factory or ' +
-          'JSX instead. See: http://fb.me/react-legacyfactory'
+          'JSX instead. See: https://fb.me/react-legacyfactory'
         ) : null);
       }
 
@@ -6175,20 +6208,38 @@ ReactComponent.prototype.forceUpdate = function(callback) {
  */
 if ("production" !== process.env.NODE_ENV) {
   var deprecatedAPIs = {
-    getDOMNode: 'getDOMNode',
-    isMounted: 'isMounted',
-    replaceProps: 'replaceProps',
-    replaceState: 'replaceState',
-    setProps: 'setProps'
+    getDOMNode: [
+      'getDOMNode',
+      'Use React.findDOMNode(component) instead.'
+    ],
+    isMounted: [
+      'isMounted',
+      'Instead, make sure to clean up subscriptions and pending requests in ' +
+      'componentWillUnmount to prevent memory leaks.'
+    ],
+    replaceProps: [
+      'replaceProps',
+      'Instead, call React.render again at the top level.'
+    ],
+    replaceState: [
+      'replaceState',
+      'Refactor your code to use setState instead (see ' +
+      'https://github.com/facebook/react/issues/3236).'
+    ],
+    setProps: [
+      'setProps',
+      'Instead, call React.render again at the top level.'
+    ]
   };
-  var defineDeprecationWarning = function(methodName, displayName) {
+  var defineDeprecationWarning = function(methodName, info) {
     try {
       Object.defineProperty(ReactComponent.prototype, methodName, {
         get: function() {
           ("production" !== process.env.NODE_ENV ? warning(
             false,
-            '%s(...) is deprecated in plain JavaScript React classes.',
-            displayName
+            '%s(...) is deprecated in plain JavaScript React classes. %s',
+            info[0],
+            info[1]
           ) : null);
           return undefined;
         }
@@ -6537,6 +6588,7 @@ var ReactCompositeComponentMixin = {
     this._pendingReplaceState = false;
     this._pendingForceUpdate = false;
 
+    var childContext;
     var renderedElement;
 
     var previouslyMounting = ReactLifeCycle.currentlyMountingInstance;
@@ -6551,7 +6603,8 @@ var ReactCompositeComponentMixin = {
         }
       }
 
-      renderedElement = this._renderValidatedComponent();
+      childContext = this._getValidatedChildContext(context);
+      renderedElement = this._renderValidatedComponent(childContext);
     } finally {
       ReactLifeCycle.currentlyMountingInstance = previouslyMounting;
     }
@@ -6565,7 +6618,7 @@ var ReactCompositeComponentMixin = {
       this._renderedComponent,
       rootID,
       transaction,
-      this._processChildContext(context)
+      this._mergeChildContext(context, childContext)
     );
     if (inst.componentDidMount) {
       transaction.getReactMountReady().enqueue(inst.componentDidMount, inst);
@@ -6695,7 +6748,7 @@ var ReactCompositeComponentMixin = {
    * @return {object}
    * @private
    */
-  _processChildContext: function(currentContext) {
+  _getValidatedChildContext: function(currentContext) {
     var inst = this._instance;
     var childContext = inst.getChildContext && inst.getChildContext();
     if (childContext) {
@@ -6720,6 +6773,13 @@ var ReactCompositeComponentMixin = {
           name
         ) : invariant(name in inst.constructor.childContextTypes));
       }
+      return childContext;
+    }
+    return null;
+  },
+
+  _mergeChildContext: function(currentContext, childContext) {
+    if (childContext) {
       return assign({}, currentContext, childContext);
     }
     return currentContext;
@@ -6979,6 +7039,10 @@ var ReactCompositeComponentMixin = {
       return inst.state;
     }
 
+    if (replace && queue.length === 1) {
+      return queue[0];
+    }
+
     var nextState = assign({}, replace ? queue[0] : inst.state);
     for (var i = replace ? 1 : 0; i < queue.length; i++) {
       var partial = queue[i];
@@ -7048,13 +7112,14 @@ var ReactCompositeComponentMixin = {
   _updateRenderedComponent: function(transaction, context) {
     var prevComponentInstance = this._renderedComponent;
     var prevRenderedElement = prevComponentInstance._currentElement;
-    var nextRenderedElement = this._renderValidatedComponent();
+    var childContext = this._getValidatedChildContext();
+    var nextRenderedElement = this._renderValidatedComponent(childContext);
     if (shouldUpdateReactComponent(prevRenderedElement, nextRenderedElement)) {
       ReactReconciler.receiveComponent(
         prevComponentInstance,
         nextRenderedElement,
         transaction,
-        this._processChildContext(context)
+        this._mergeChildContext(context, childContext)
       );
     } else {
       // These two IDs are actually the same! But nothing should rely on that.
@@ -7070,7 +7135,7 @@ var ReactCompositeComponentMixin = {
         this._renderedComponent,
         thisID,
         transaction,
-        this._processChildContext(context)
+        this._mergeChildContext(context, childContext)
       );
       this._replaceNodeWithMarkupByID(prevComponentID, nextMarkup);
     }
@@ -7108,11 +7173,12 @@ var ReactCompositeComponentMixin = {
   /**
    * @private
    */
-  _renderValidatedComponent: function() {
+  _renderValidatedComponent: function(childContext) {
     var renderedComponent;
     var previousContext = ReactContext.current;
-    ReactContext.current = this._processChildContext(
-      this._currentElement._context
+    ReactContext.current = this._mergeChildContext(
+      this._currentElement._context,
+      childContext
     );
     ReactCurrentOwner.current = this;
     try {
@@ -7481,6 +7547,7 @@ var ReactDOM = mapObject({
 
   // SVG
   circle: 'circle',
+  clipPath: 'clipPath',
   defs: 'defs',
   ellipse: 'ellipse',
   g: 'g',
@@ -7632,11 +7699,13 @@ function assertValidProps(props) {
       'Can only set one of `children` or `props.dangerouslySetInnerHTML`.'
     ) : invariant(props.children == null));
     ("production" !== process.env.NODE_ENV ? invariant(
-      props.dangerouslySetInnerHTML.__html != null,
+      typeof props.dangerouslySetInnerHTML === 'object' &&
+      '__html' in props.dangerouslySetInnerHTML,
       '`props.dangerouslySetInnerHTML` must be in the form `{__html: ...}`. ' +
-      'Please visit http://fb.me/react-invariant-dangerously-set-inner-html ' +
+      'Please visit https://fb.me/react-invariant-dangerously-set-inner-html ' +
       'for more information.'
-    ) : invariant(props.dangerouslySetInnerHTML.__html != null));
+    ) : invariant(typeof props.dangerouslySetInnerHTML === 'object' &&
+    '__html' in props.dangerouslySetInnerHTML));
   }
   if ("production" !== process.env.NODE_ENV) {
     ("production" !== process.env.NODE_ENV ? warning(
@@ -10442,7 +10511,7 @@ function warnAndMonitorForKeyUse(message, element, parentType) {
 
   ("production" !== process.env.NODE_ENV ? warning(
     false,
-    message + '%s%s See http://fb.me/react-warning-keys for more information.',
+    message + '%s%s See https://fb.me/react-warning-keys for more information.',
     parentOrOwnerAddendum,
     childOwnerAddendum
   ) : null);
@@ -15263,6 +15332,7 @@ var MUST_USE_ATTRIBUTE = DOMProperty.injection.MUST_USE_ATTRIBUTE;
 
 var SVGDOMPropertyConfig = {
   Properties: {
+    clipPath: MUST_USE_ATTRIBUTE,
     cx: MUST_USE_ATTRIBUTE,
     cy: MUST_USE_ATTRIBUTE,
     d: MUST_USE_ATTRIBUTE,
@@ -15308,6 +15378,7 @@ var SVGDOMPropertyConfig = {
     y: MUST_USE_ATTRIBUTE
   },
   DOMAttributeNames: {
+    clipPath: 'clip-path',
     fillOpacity: 'fill-opacity',
     fontFamily: 'font-family',
     fontSize: 'font-size',
@@ -18120,6 +18191,7 @@ var shouldWrap = {
   // Force wrapping for SVG elements because if they get created inside a <div>,
   // they will be initialized in the wrong namespace (and will not display).
   'circle': true,
+  'clipPath': true,
   'defs': true,
   'ellipse': true,
   'g': true,
@@ -18162,6 +18234,7 @@ var markupWrap = {
   'th': trWrap,
 
   'circle': svgWrap,
+  'clipPath': svgWrap,
   'defs': svgWrap,
   'ellipse': svgWrap,
   'g': svgWrap,
@@ -19791,18 +19864,7 @@ module.exports = warning;
 },{"./emptyFunction":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/emptyFunction.js","_process":"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/react.js":[function(require,module,exports){
 module.exports = require('./lib/React');
 
-},{"./lib/React":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/React.js"}],"/Users/felix/Workspace/publitas/react-svg-icons/svg-body/index.js":[function(require,module,exports){
-'use strict';
-
-module.exports = function (svgString) {
-  return svgString
-  // remove outer svg element
-  .replace(/<\/?svg[^>]*>/g, '')
-  // remove hardcoded dimensions
-  .replace(/ width="\d+(\.\d+)?(px)?"/gi, '').replace(/ height="\d+(\.\d+)?(px)?"/gi, '');
-};
-
-},{}],"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js":[function(require,module,exports){
+},{"./lib/React":"/Users/felix/Workspace/publitas/react-svg-icons/node_modules/react/lib/React.js"}],"/usr/local/lib/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js":[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};

@@ -1,0 +1,10 @@
+{
+
+  "scripts": {
+    "start": "watchify -t babelify example.jsx -o example.js",
+    "debug": "browserify -t babelify -x react example.jsx"
+  },
+  "react-svg-icons": {
+    "assetPath": ""
+  }
+}

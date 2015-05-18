@@ -14,24 +14,20 @@ React.render(
     <Icon name='react-icon'
       width='256'
       height='256'
-      color='#4cd695'/>
+      color='#d7675a'
+      onClick={function () { alert('yay') } }/>
     <br/>
 
     <Icon name='react-icon'
       width='128'
       height='128'
-      color='#d8494c'/>
+      color='#2e5765'/>
     <br/>
 
     <Icon name='react-icon'
       width='200'
       height='200'
-      color='#eea43c'/>
-
-    <Icon name='right'
-      width='200'
-      height='200'
-      color='red'/>
+      color='#999b95'/>
 
   </div>,
   document.getElementById('example')

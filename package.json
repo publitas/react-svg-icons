@@ -7,8 +7,11 @@
     "type": "git",
     "url": "https://github.com/publitas/react-svg-icons"
   },
+  "authors": [
+    "Felix Hageloh"
+  ],
   "scripts": {
-    "test": ""
+    "test": "node_modules/tap/bin/run.js test/*.js && node_modules/jest-cli/bin/jest.js"
   },
   "browserify": {
     "transform": [
@@ -16,9 +19,11 @@
       "./inline-assets"
     ]
   },
-  "authors": [
-    "Felix Hageloh"
-  ],
+  "jest": {
+    "unmockedModulePathPatterns": [
+      "react"
+    ]
+  },
   "license": "MIT",
   "dependencies": {
     "react": "^0.13.x",
@@ -37,6 +42,10 @@
     "browserify"
   ],
   "devDependencies": {
-    "babelify": "^6.0.2"
+    "babelify": "^6.0.2",
+    "browserify": "^10.2.0",
+    "jest-cli": "^0.4.5",
+    "react-tools": "^0.13.3",
+    "tap": "^1.0.5"
   }
 }

@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run-script',
+1 verbose cli   'debug' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.38
+4 verbose run-script [ 'predebug', 'debug', 'postdebug' ]
+5 info predebug @
+6 info debug @
+7 verbose unsafe-perm in lifecycle true
+8 info @ Failed to exec debug script
+9 error @ debug: `browsrify -t babelify -x react example.jsx`
+9 error Exit status 127
+10 error Failed at the @ debug script.
+10 error This is most likely a problem with the  package,
+10 error not with npm itself.
+10 error Tell the author that this fails on your system:
+10 error     browsrify -t babelify -x react example.jsx
+10 error You can get their info via:
+10 error     npm owner ls
+10 error There is likely additional logging output above.
+11 error System Darwin 14.3.0
+12 error command "/usr/local/bin/node" "/usr/local/bin/npm" "run-script" "debug"
+13 error cwd /Users/felix/Workspace/publitas/react-svg-icons/example
+14 error node -v v0.10.38
+15 error npm -v 1.4.28
+16 error code ELIFECYCLE
+17 verbose exit [ 1, true ]

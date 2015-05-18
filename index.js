@@ -1,12 +1,9 @@
 var React = require('react');
-var getSvgBody = require('./lib/get-svg-body');
-var includeSvg = require('include-svg');
+var toReact = require('svg-to-react');
 var assign = require('react/lib/Object.assign');
 var resolveAssetPath = require('./lib/resolve-asset-path');
 
-var assets = includeSvg(resolveAssetPath());
 var icons = {};
-
 var Icon = React.createClass({
   displayName: 'Icon',
 
@@ -25,58 +22,30 @@ var Icon = React.createClass({
     };
   },
 
-  render: function() {
-    var icon = resolveIcon(this.props.name);
-
-    if (!icon) {
-      return React.createElement('div', {style: {color: '#c1272a'}},
-        'Could not find icon called "'+this.props.name+'"'
-      );
-    }
-
-    var style = assign({ verticalAlign: 'middle' },
-      this.props.style
+  renderFallback: function() {
+    return React.createElement('div', {style: {color: '#c1272a'}},
+      'Could not find icon called "'+this.props.name+'"'
     );
+  },
 
-    var props = assign({},
-      this.props,
-      {
-        viewBox: icon.viewBox,
-        preserveAspectRatio: 'xMidYMid meet',  // preserve aspect ratio and center
-        style: style,
-        fill: this.props.color,
-        dangerouslySetInnerHTML: { __html:
-          icon.body
-            .replace(/(stroke)="([^"]+)"/gi, replaceColor(this.props.color))
-            .replace(/(fill)="([^"]+)"/gi, replaceColor(this.props.color))
-      }
+  render: function() {
+    var renderIcon = icons[this.props.name] || this.renderFallback;
+    var props = assign( {}, this.props, {
+      preserveAspectRatio: 'xMidYMid meet',  // preserve aspect ratio and center
+      style: assign( { verticalAlign: 'middle' },
+        this.props.style
+      ),
+      fill: this.props.color
     });
 
-    return React.createElement('svg', props);
+    return renderIcon(props);
   }
 });
 
-// TODO: do this as a pre-process step
-function resolveIcon(name) {
-  var svgString;
-
-  if (icons[name]) return icons[name];
-  if ( !(svgString = assets[name]) ) return null;
-
-  icons[name] = {
-    body: getSvgBody(svgString),
-    viewBox: (svgString.match(/viewBox=['"]([^'"]*)['"]/) || [])[1]
-  };
-
-  return icons[name];
-}
-
-function replaceColor(color) {
-  return function(_, type, prevColor) {
-    return (prevColor === 'none')
-      ? type+'="none"'
-      : type+'="'+color+'"';
-  };
-}
-
+toReact.convertDir(resolveAssetPath(), function(err, svgIcons) {
+  if (err) {
+    throw new Error('Error loading icons: '+ err);
+  }
+  icons = svgIcons;
+});
 module.exports = Icon;

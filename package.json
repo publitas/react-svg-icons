@@ -1,6 +1,6 @@
 {
   "name": "react-svg-icons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SVG icons as react components",
   "main": "index.js",
   "repository": {

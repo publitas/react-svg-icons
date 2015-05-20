@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "watchify -t babelify example.jsx -i react-svg-icons -o ../example.js",
+    "debug": "browserify -t babelify -x react -i react-svg-icons example.jsx"
+  },
+  "dependencies": {
+    "babelify": "^6.1.1",
+    "react": "^0.13.3",
+    "react-svg-icons": "^0.1.1"
+  },
+
+  "react-svg-icons": {
+    "assetPath": "icons/"
+  }
+}

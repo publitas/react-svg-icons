@@ -16,8 +16,6 @@ var Icon = React.createClass({
 
   getDefaultProps: function() {
     return {
-      width: 16,
-      height: 16,
       color: '#000'
     };
   },
@@ -30,13 +28,10 @@ var Icon = React.createClass({
 
   render: function() {
     var renderIcon = icons[this.props.name] || this.renderFallback;
-    var props = assign( {}, this.props, {
+    var props = assign( {}, {
       preserveAspectRatio: 'xMidYMid meet',  // preserve aspect ratio and center
-      style: assign( { verticalAlign: 'middle' },
-        this.props.style
-      ),
       fill: this.props.color
-    });
+    }, this.props);
 
     return renderIcon(props);
   }

@@ -12,8 +12,7 @@ const style = {
   textAlign: 'center',
   fontFamily: 'GlacialIndifferenceRegular, Helvetica Neue, Helvetica, Arial, sans-serif',
   background: '#1F3645',
-  color: colors[0],
-  height: '100%'
+  color: colors[0]
 };
 
 const wrapperStyle = {
@@ -215,5 +214,7 @@ const Example = React.createClass({
 });
 
 const domEl = document.getElementById('example');
+document.body.style.background = style.background;
+document.body.style.paddingBottom = 40;
 domEl.style.height = '100%';
 React.render(<Example />, domEl);

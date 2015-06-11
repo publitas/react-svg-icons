@@ -1,6 +1,6 @@
 var React = require('react');
 var toReact = require('svg-to-react');
-var assign = require('react/lib/Object.assign');
+var assign = require('object-assign');
 var resolveAssetPath = require('./lib/resolve-asset-path');
 
 var icons = {};

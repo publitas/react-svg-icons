@@ -1,4 +1,4 @@
-var React = require.requireActual('react');
+var React = require('react');
 
 exports.convertDir = function(_, callback) {
   callback(null, {

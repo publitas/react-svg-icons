@@ -11,12 +11,14 @@ var Icon = React.createClass({
     name: React.PropTypes.string.isRequired,
     width: React.PropTypes.number,
     height: React.PropTypes.number,
-    color: React.PropTypes.string
+    color: React.PropTypes.any
   },
 
   getDefaultProps: function() {
     return {
-      color: '#000'
+      color: function (_, original) {
+        return original;
+      }
     };
   },
 
@@ -28,10 +30,11 @@ var Icon = React.createClass({
 
   render: function() {
     var renderIcon = icons[this.props.name] || this.renderFallback;
-    var props = assign( {}, {
-      preserveAspectRatio: 'xMidYMid meet',  // preserve aspect ratio and center
-      fill: this.props.color
-    }, this.props);
+    var props = assign( {},
+      { preserveAspectRatio: 'xMidYMid meet' }, // preserve aspect ratio and center
+      typeof this.props.color !== 'function' ? { fill: this.props.color } : {},
+      this.props
+    );
 
     return renderIcon(props);
   }

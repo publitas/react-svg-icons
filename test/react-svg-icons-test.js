@@ -45,11 +45,43 @@ test('rendering an existing icon', function(t) {
   t.end();
 });
 
+test('the color property', function(t) {
+  var icon;
+
+  test('default is a function that returns the original color', function(tt) {
+    icon = render(
+      React.createElement(Icon, { name: 'foo'})
+    );
+    tt.type(icon.props.color, 'function');
+    tt.equal(icon.props.color(null, 'green'), 'green');
+    tt.end();
+  });
+
+  test('when it is a color string, it sets a global fill style', function(tt) {
+    icon = render(
+      React.createElement(Icon, { name: 'foo', color: 'red' })
+    );
+    tt.equal(icon.props.fill, 'red');
+    tt.end();
+  });
+
+  test('it sets no global fill style when it is a function', function(tt) {
+    icon = render(
+      React.createElement(Icon, { name: 'foo',
+        color: function () {}
+      })
+    );
+    tt.equal(icon.props.fill, undefined);
+    tt.end();
+  });
+
+  t.end();
+});
+
 test('rendering a non-existing icon', function(t) {
   var icon = render(
     React.createElement(Icon, { name: 'bar' })
   );
-
 
   t.equal(icon.type, 'div');
   t.equal(icon.props.children, 'Could not find icon called "bar"');

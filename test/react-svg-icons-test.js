@@ -1,6 +1,6 @@
 var test = require('tap').test;
-var React = require('react/addons');
-var TestUtils = React.addons.TestUtils;
+var React = require('react');
+var TestUtils = require('react-addons-test-utils');
 var renderer = TestUtils.createRenderer();
 var proxyquire = require('proxyquire');
 

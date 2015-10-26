@@ -27,7 +27,7 @@
   "license": "MIT",
   "dependencies": {
     "object-assign": "^3.0.0",
-    "react": "^0.13.3",
+    "react": "^0.14.0",
     "static-module": "^1.1.2",
     "svg-to-react": "^0.1.0",
     "svgo": "^0.5.1",

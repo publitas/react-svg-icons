@@ -47,7 +47,6 @@
     "browserify": "^10.2.4",
     "proxyquire": "^1.5.0",
     "react-addons-test-utils": "^0.14.0",
-    "react-tools": "^0.13.3",
-    "tap": "^1.0.5"
+    "tap": "^2.2"
   }
 }

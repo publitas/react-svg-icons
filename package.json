@@ -1,6 +1,6 @@
 {
   "name": "react-svg-icons",
-  "version": "0.4.0",
+  "version": "0.3.0",
   "description": "SVG icons as react components",
   "main": "index.js",
   "repository": {
@@ -26,7 +26,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "create-react-class": "^15.6.2",
     "object-assign": "^4.1.1",
     "prop-types": "^15.6.0",
     "react-dom": "^15.6.2",

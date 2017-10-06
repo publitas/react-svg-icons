@@ -20,31 +20,31 @@ const Example = () => {
       <h2>Original Icon</h2>
       <Icon
         name='react-icon'
-        width='200'
-        height='200'
+        width={200}
+        height={200}
       />
 
       <h2>Single Color</h2>
       <Icon
         name='react-icon'
-        width='200'
-        height='200'
+        width={200}
+        height={200}
         color='#00d0a8'
       />
 
       <h2>Multiple Colors</h2>
       <Icon
         name='react-icon'
-        width='200'
-        height='200'
+        width={200}
+        height={200}
         color={color}
       />
 
       <h2>Tiny</h2>
       <Icon
         name='react-icon'
-        width='20'
-        height='20'
+        width={20}
+        height={20}
         color='#333'
       />
     </div>

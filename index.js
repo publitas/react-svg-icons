@@ -1,17 +1,19 @@
 var React = require('react');
+var createReactClass = require('create-react-class');
+var PropTypes = require('prop-types');
 var toReact = require('svg-to-react');
 var assign = require('object-assign');
 var resolveAssetPath = require('./lib/resolve-asset-path');
 
 var icons = {};
-var Icon = React.createClass({
+var Icon = createReactClass({
   displayName: 'Icon',
 
   propTypes: {
-    name: React.PropTypes.string.isRequired,
-    width: React.PropTypes.number,
-    height: React.PropTypes.number,
-    color: React.PropTypes.any
+    name: PropTypes.string.isRequired,
+    width: PropTypes.number,
+    height: PropTypes.number,
+    color: PropTypes.any
   },
 
   getDefaultProps: function() {
